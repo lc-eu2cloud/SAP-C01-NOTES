@@ -4,7 +4,7 @@
 
 ### Animal Rescue & Awareness Organization ###
 * Overview
-  * region-dependent medical care, animal rescue, habitat preservation for wild animals, and providing new homes for domestic animals
+  * region-dependent animal rescue, medical care, habitat preservation for wild animals, and providing new homes for domestic animals
   * Monitoring (habitats, animal migration)
   * Technologies (IoT, Big Data)
   * Global company (HQ:Brisbane, Australia)
