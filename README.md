@@ -2,7 +2,8 @@
 
 ## Animals4Life ORG ##
 
-* Animal Rescue & Awareness Organization
+###Animal Rescue & Awareness Organization###
+ * Overview
   * region-dependent medical care, animal rescue, habitat preservation for wild animals, and providing new homes for domestic animals
   * Monitoring (habitats, animal migration)
   * Technologies (IoT, Big Data)
