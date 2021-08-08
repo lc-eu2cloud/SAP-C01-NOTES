@@ -2,8 +2,8 @@
 
 ## Animals4Life ORG ##
 
-###Animal Rescue & Awareness Organization###
- * Overview
+### Animal Rescue & Awareness Organization ###
+* Overview
   * region-dependent medical care, animal rescue, habitat preservation for wild animals, and providing new homes for domestic animals
   * Monitoring (habitats, animal migration)
   * Technologies (IoT, Big Data)
@@ -17,3 +17,5 @@
     * Azure/GCP isolated pilots lacking resilience & scalability business needed
     * All global offices and remote field workers consume resources from Brisbane office
   * cost-conscious but willing to try new things/adopt new technologies (business benefit required)
+
+ * Current Problems 
