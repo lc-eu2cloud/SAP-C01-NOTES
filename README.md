@@ -19,9 +19,9 @@
   * cost-conscious but willing to try new things/adopt new technologies (business benefit required)
 
  * Current Problems
-  * legacy on-premises is failing (DC will be decommissioned in 18 months)
-  * Cloud pilots have been suboptimal and not best practice (AWS/Azure/GCP)
-  * performance issues for remote field workers outside Brisbane area experiencing high latency
-  * lack of HA and scalability hinders opportunity to grow at scale and adequately non-Australian staff & locations
-  * skills gap with existing staff: little automation/experience with cloud development
+   * legacy on-premises is failing (DC will be decommissioned in 18 months)
+   * Cloud pilots have been suboptimal and not best practice (AWS/Azure/GCP)
+   * performance issues for remote field workers outside Brisbane area experiencing high latency
+   * lack of HA and scalability hinders opportunity to grow at scale and adequately non-Australian staff & locations
+   * skills gap with existing staff: little automation/experience with cloud development
   
