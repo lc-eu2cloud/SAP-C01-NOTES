@@ -5,7 +5,7 @@
 ### Animal Rescue & Awareness Organization ###
 * Overview
   * region-dependent animal rescue, medical care, habitat preservation for wild animals, and providing new homes for domestic animals
-  * Monitoring (habitats, animal migration)
+  * Monitoring (worldwide habitat devastation, animal migration)
   * Technologies (IoT, Big Data)
   * Global company (HQ:Brisbane, Australia)
     * Other locations: London, New York, Seattle
