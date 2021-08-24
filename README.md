@@ -24,4 +24,10 @@
    * performance issues for remote field workers outside Brisbane area experiencing high latency
    * lack of HA and scalability hinders opportunity to grow at scale and adequately support non-Australian staff & locations
    * skills gap with existing staff: little automation/experience with cloud development
+   * Global expansion concerns - costs for new infrastructure
+ 
+ * Ideal Outcomes
+   * fast performance for all field workers (not limited by systems business uses)
+   * when required, business needs to deploy necessary operations into new areas of the world (provisioned/de-provisioned based on business needs;automation & usage-based billing)
+   * low base infrastructure cost (allocate most of limited funds towards animal care) whilst able to be scalable enough to rapidly grow when required
   
