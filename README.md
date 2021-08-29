@@ -28,6 +28,9 @@
  
  * Ideal Outcomes
    * fast performance for all field workers (not limited by systems business uses)
-   * when required, business needs to deploy necessary operations into new areas of the world (provisioned/de-provisioned based on business needs;automation & usage-based billing)
+   * when required, business needs to deploy necessary operations into new regions quickly (provisioned/de-provisioned based on business needs;automation & usage-based billing)
    * low base infrastructure cost (allocate most of limited funds towards animal care) whilst able to be scalable enough to rapidly grow when required
+   * Utilizing agility to leverage real-world events such as social media campaigns at short notice to draw attention to disasters or other issues worldwide (rapid provisioning)
+     *  progressive business wanting to make use of solutions that support emerging technologies (IoT, Big Data, Machine Learning, analytics, etc.)
+   * With automation, business can focus on core staff that deliver on the organization's mission; minimized costs for IT, legal, finance, & minimized need for additional IT staff 
   
