@@ -6,6 +6,6 @@
   * Posssession - something you have (bank card: ATM requires bank card (something you have) & pin (something you know), example of 2-factor MFA; MFA device/app)
   * Inherent - something you are (fingerprint, face scan, voice recognition, or iris scan)
   * Location - physical location (particular set of coordinates anywhere in the world), or type of network logged into to access a system (corporate network or home wifi)
-  * More factors leads to more security & identities that harder to fake (balance between convenience & security)
+  * More factors leads to more security & identities that harder to fake, but can be inconvenient (need balance between convenience & security)
     * highly secure but inconvenient login process: must use username & password, MFA device/app, fingerprint or facial scan, & only within corporate network
 * #### MFA within AWS ####
