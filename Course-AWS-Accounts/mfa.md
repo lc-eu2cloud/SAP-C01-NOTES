@@ -7,18 +7,19 @@
   * Posssession - something you have (bank card: ATM requires bank card (something you have) & PIN (something you know), example of 2-factor MFA; MFA device/app)
   * Inherent - something you are (fingerprint, face scan, voice recognition, or iris scan)
   * Location - physical location (particular set of coordinates anywhere in the world), or type of network logged into to access a system (corporate network or home wifi)
-  * More factors leads to more security & identities that harder to fake, can be inconvenient (need balance between convenience & security)
+  * More factors lead to more security & identities that harder to fake, but can be inconvenient (need balance between convenience & security)
     * highly secure but inconvenient login process: must use username & password, MFA device/app, fingerprint or facial scan, & only within corporate network
 #### MFA within AWS ####
-* start with AWS acccount that by default, only requires username & password to log in (something you know - single factor authentication)
-* configure MFA for identity within AWS account (ie account root user)
-  * activate MFA for account root user, AWS generates secret key (randomly generated) & all associated information (linked username & name of the service)
+* start with AWS acccount & by default, only requires username & password to log in (something you know - single factor authentication)
+* to setup MFA, need to configure MFA for identity within AWS account (ie account root user)
+  * activate MFA for account root user, AWS generates secret key (randomly generated) & all associated information (username linked to key & name of the service)
   * that information eventually needs to be entered into a MFA application (ie Google Authenticator)
-  * to make this easier, AWS uses all generated information from MFA activation & generates a QR code (encodes information into a visual pattern)
-  * Using MFA application on your phone, scan AWS generated QR code which transfers information in the QR code into MFA application
-  * now an entry in the application, with a code that generates periodically (never the same)
+  * to make this easier, AWS uses all generated information from MFA activation & generates a QR code which encodes that information into a visual pattern
+  * Using MFA application on your phone, scan AWS generated QR code which transfers information in the QR code into MFA application as a new entry
+  * this entry in the MFA application, provides a code that generates periodically (never the same)
   * MFA application holds one or more virtual MFAs (each virtual MFA, a virtual MFA device), each representing identities in different services (AWS, Gmail, Azure, GCP, etc)
-* with configured MFA for specific user, required to enter username, password, & prompted to enter MFA code
+
+* with MFA configured for specific user, now required to enter username, password, & prompted to enter MFA code
   * MFA code needs to be current code for correct virtual MFA on your specific authenticator application on your phone or on another device
   * providing username & password (something you know) with MFA code (something you have) means your identity within AWS is secured using multi-factor authentication
   * have to have all 3 to login (username, password, correct MFA code) 
