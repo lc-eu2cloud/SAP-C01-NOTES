@@ -12,7 +12,7 @@
 #### MFA within AWS ####
 * start with AWS acccount & by default, only requires username & password to log in (something you know - single factor authentication)
 * to setup MFA, need to configure MFA for identity within AWS account (ie account root user)
-  * activate MFA for account root user, AWS generates secret key (randomly generated) & all associated information (username linked to key & name of the service)
+  * activate MFA for account root user, AWS generates secret key (randomly generated) & all associated information the MFA app can use visually (username linked to key & name of the service)
   * that information eventually needs to be entered into a MFA application (ie Google Authenticator)
   * to make this easier, AWS uses all generated information from MFA activation & generates a QR code which encodes that information into a visual pattern
   * Using MFA application on your phone, scan AWS generated QR code which transfers information in the QR code into MFA application as a new entry
