@@ -9,7 +9,7 @@
   * Technologies (IoT, Big Data)
   * Global company (HQ:Brisbane, Australia)
     * Other locations: London, New York, Seattle
-    * Staff: ~100 remote field workers (animal care, vets, research scientists) located in regional Australia & other in-need locations; political lobbying staff (government policy)
+    * Staff: ~100 remote field workers (animal care, vets, research scientists) located in Australian region & other in-need locations; political lobbying staff (government policy)
     * Departments: call center, general admin, IT, legal, marketing, & accounts
   * Infrastructure
     * small on-prem DC in Brisbane; number of colos with 5 rented racks of space; old vendor-managed DC & vendor encouraging customers move out ASAP
