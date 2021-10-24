@@ -5,7 +5,7 @@
   * format: key:value pairs, lists, dictionaries
 * #### key:value ####
   * YAML document: unordered collection of key:value pairs where each key has a corresponding value
-    * YAML supports keys & values in form of strings, numbers, floating point, boolean, and null 
+    * YAML supports representing keys & values as strings, numbers, floating point, boolean, and null 
 * #### lists ####
 * #### Structure ####
 * #### CloudFormation ####
