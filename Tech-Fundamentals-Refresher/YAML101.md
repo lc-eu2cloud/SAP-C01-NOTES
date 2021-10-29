@@ -15,4 +15,6 @@
       * YAML can also represent nested lists using different levels of indentation 
  
 * #### Structure (Dictionary) ####
+  * dictionary: where a list item within a list has a structure of an unordered set of 1 or more key:value pairs
+![list item:dictionary/structure example](https://files.slack.com/files-pri/TQBU5QBA8-F02KL3P8U3E/image.png)
 * #### CloudFormation ####
