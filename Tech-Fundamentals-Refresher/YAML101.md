@@ -13,7 +13,6 @@
     * values can be enclosed in "",'', or not (all are optional & valid), however enclosing allows you to be more precise & avoid confusion
     * indentation REALLY matters (ALWAYS uses spaces), for example, list items (ALWAYS denoted by hyphen) with same level of indentation (space hyphen) are all part of the same list
       * YAML can also represent nested lists using different levels of indentation 
- 
 * #### Structure (Dictionary) ####
   * dictionary: a structure of an unordered set of 1 or more key:value pairs (e.g. where a list item within a list has a dictionary of key:value pairs)
   * image below: key "adrianscats" is a list of dictionaries where each dictionary contains a 'name' key, with a value, 'color' key with a value, then for final list item, a 3rd element, a 'numofeyes' key:value pair
