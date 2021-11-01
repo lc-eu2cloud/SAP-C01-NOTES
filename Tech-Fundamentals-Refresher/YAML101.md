@@ -21,3 +21,6 @@
 * through YAML, key:value pairs, lists, & dictionaries allow you build complex data structures in a human readable way (e.g. database of someone's cats)
 * YAML files can be read into or written out by an application, & commonly used for storage/transmission of configurations 
 * #### CloudFormation ####
+  * image below:
+  ![yaml CFN template excerpt example](https://i.postimg.cc/7ZzQsg3M/image2-resize.png)
+  * 
