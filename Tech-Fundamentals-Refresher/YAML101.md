@@ -1,7 +1,7 @@
 ## YAML101 - YAML AINT MARKUP LANGUAGE ##
 
 #### YAML Introduction ####
-* YAML: human readable language that specifies a consistent format for data storage/transmission (data serialization) using Unicode character set
+* YAML: human readable language that specifies a consistent data structure conversion format for data storage/transmission (data serialization) using Unicode character set
   * format: key:value pairs, lists, dictionaries
 * #### key:value ####
   * YAML document: unordered collection of key:value pairs where each key has a corresponding value
@@ -15,9 +15,10 @@
       * YAML can also represent nested lists using different levels of indentation 
  
 * #### Structure (Dictionary) ####
-  * dictionary: where a list item within a list has a structure of an unordered set of 1 or more key:value pairs
+  * dictionary: a structure of an unordered set of 1 or more key:value pairs (e.g. where a list item within a list has a dictionary of key:value pairs)
   * image below: key "adrianscats" is a list of dictionaries where each dictionary contains a 'name' key, with a value, 'color' key with a value, then for final list item, a 3rd element, a 'numofeyes' key:value pair
 ![list item:dictionary/structure example](https://i.postimg.cc/rF5BghY6/image.png)
   * values can be represented as strings, numbers, floating point, booleans, lists, dictionaries, or a combination of any of them
-  * through YAML,
+* through YAML, key:value pairs, lists, & dictionaries allow you build complex data structures in a human readable way (e.g. database of someone's cats)
+* YAML files can be read into or written out by an application, & commonly used for storage/transmission of configurations 
 * #### CloudFormation ####
