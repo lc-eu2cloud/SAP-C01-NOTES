@@ -20,7 +20,19 @@
   * values can be represented as strings, numbers, floating point, booleans, lists, dictionaries, or a combination of any of them
 * through YAML, key:value pairs, lists, & dictionaries allow you build complex data structures in a human readable way (e.g. database of someone's cats)
 * YAML files can be read into or written out by an application, & commonly used for storage/transmission of configurations 
-* #### CloudFormation ####
-  * image below:
+* #### CloudFormation (CFN) ####
+  * YAML template (image below):
+    * 'Resources' section is a dictionary, within it a key 's3bucket', also a dictionary containing 'Type' & 'Properties' keys
+      * Type is a key that has string value, Properties is a dictionary containing 'BucketName' where BucketName is a key with value of "ac1337catpics" (string)
   ![yaml CFN template excerpt example](https://i.postimg.cc/7ZzQsg3M/image2-resize.png)
-  * 
+    * indentation levels (image above - highest level of indentation -> lowest):
+      * 'BucketName' is nested within 'Properties'
+      * 'Type' & 'Properties' with same level of indentation, are nested within 's3bucket'
+      * 's3bucket' is nested within 'Resources'
+      * 'Resources' is a top-level key:value pair within the YAML template
+    * Summary:
+      * 'Resources' is a key:value pair where the value is a dictionary with 1 key:value pair (s3bucket)
+      * 's3bucket' is a key:value pair with a dictionary that has 2 key:value pairs (Type & Properties)
+        * 'Type' is a key:value pair which controls what type of resource is created (in this example, an s3 bucket)
+        * 'Properties' is a key:value pair where the value is a dictionary with 1 key:value pair (BucketName)
+          * 'BucketName' is a key:value pair where the value is a string that controls the name of the s3 bucket (physical resource that will be created by CloudFormation)  
