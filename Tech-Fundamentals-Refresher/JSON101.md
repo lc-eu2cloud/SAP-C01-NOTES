@@ -7,7 +7,7 @@
 * JSON supports represented values as string, object, number, array, true, false, null
 
 * #### Objects & Lists ####
-  * s
+  * each key ("cats","colors","numofeyes") has a value where the value is an array
 ![JSON Object example](https://i.postimg.cc/bNpyTqG3/image.png) 
 * #### Structure ####
 * #### CloudFormation ####
