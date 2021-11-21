@@ -15,4 +15,4 @@
 ![JSON Nested Object example](https://i.postimg.cc/MKnnRWgN/image.png)
   * summary: JSON objects can be nested within JSON objects, arrays can be ordered lists of JSON objects, & arrays can contain JSON objects within themselves 
 * #### CloudFormation ####
-
+![CloudFormation JSON Example](https://i.postimg.cc/GtQZz89R/image.png)
