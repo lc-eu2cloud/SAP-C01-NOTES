@@ -12,7 +12,7 @@
 ![JSON Object array example](https://i.postimg.cc/bNpyTqG3/image.png)
 * #### Structure ####
   * JSON Object with 4 key:value pairs with key ("roffle","truffles","penny","winkie") where corresponding value is JSON object (4 nested JSON objects)
-![JSON Object example](https://i.postimg.cc/MKnnRWgN/image.png)
+![JSON Nested Object example](https://i.postimg.cc/MKnnRWgN/image.png)
   * summary: JSON objects can be nested within JSON objects, arrays can be ordered lists of JSON objects, & arrays can contain JSON objects within themselves 
 * #### CloudFormation ####
 
