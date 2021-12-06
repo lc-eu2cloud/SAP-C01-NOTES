@@ -1,7 +1,7 @@
 ## YAML101 - YAML AINT MARKUP LANGUAGE ##
 
 #### YAML Introduction ####
-* YAML: human readable language that specifies a consistent data structure conversion format for data storage/transmission (data serialization) using Unicode character set
+* YAML: human readable data serialization language that specifies a consistent data structure conversion format for data storage/transmission using Unicode character set
   * format: key:value pairs, lists, dictionaries
 * #### key:value ####
   * YAML document: unordered collection of key:value pairs where each key has a corresponding value
