@@ -18,5 +18,7 @@
 ![IAM Access Key structure](https://i.postimg.cc/3wVtfTVj/image4.png)
   * when you create access keys (access key ID, secret access key) both of these parts are provided by AWS
     * once provided with these parts, there's no way to get access to the secret key again (AWS doesn't allow future downloads of secret access key)
-    * NOTE:   
+    * NOTE: important to note down secret access key & store it safely and securely when AWS initially provides it
+    * both access key ID (public) & secret access key (private) are used when making a request to AWS using the command line
+    * since AWS stores access key ID, they'll know when you're using the secret access key to sign the request, making it a valid request
 
