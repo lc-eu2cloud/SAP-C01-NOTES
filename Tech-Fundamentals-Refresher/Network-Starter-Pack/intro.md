@@ -6,5 +6,7 @@
 * Segmenting, Ports & Sessions - components which ensure reliable data transfer used by your **applications** (another networking reference point)
 * OSI 7-Layer Model - breaking up networking components into 7 layers (distinct components), starting at bottom with physical networking & ending at the top with application networking
 #### OSI 7-Layer Model ####
-* since OSI model conceptual (7 layers stacked on top of each other), not always how networking software is implemented
-* start with physical -> data link -> network -> transport -> session -> presentation -> application (aka networking stack or software that does each of these functions)
+* since OSI model conceptual, not always how networking software is implemented, but provides a good foundation on how each component/layer works & interacts with the other layers
+* 7 layers stacked on top of each other; start with physical -> data link -> network -> transport -> session -> presentation -> application 
+* these 7 layers aka networking stack: software that does each of these functions in the OSI model
+* 
