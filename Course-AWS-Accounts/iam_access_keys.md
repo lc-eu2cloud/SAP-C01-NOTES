@@ -1,4 +1,4 @@
-## IAM Access Keys ##
+## IAM Access Keys - Encryption 101 Refresher recommended
 
 #### Introduction ####
 * Authentication to access AWS using the command line or within other applications using APIs, is not done via username, password, & MFA but using IAM access keys instead
