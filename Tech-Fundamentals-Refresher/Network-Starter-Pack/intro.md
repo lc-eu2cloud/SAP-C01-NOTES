@@ -9,4 +9,11 @@
 * since OSI model conceptual, not always how networking software is implemented, but provides a good foundation on how each component/layer works & interacts with the other layers
 * 7 layers stacked on top of each other; start with physical -> data link -> network -> transport -> session -> presentation -> application 
 * these 7 layers aka networking stack: software that does each of these functions in the OSI model
-* 
+  * laptops, phones, wifi/cable routers, servers, etc., have networking stacks
+* OSI model divided into groupings:
+  * media layers (physical, data link, network)
+    * how data moved between point A & point B (ie within local network or across the globe)
+  * host layers (transport, session, presentation, application)
+    * how data is segmented & reassembled for transport & formatted so that both sides of a network connection can understand it
+* High-level OSI model overview
+  * Layer 7: web browser at one end & web server at other end of connection 
