@@ -17,3 +17,5 @@
  * AWS account security
    * as before, account root user has full control over an AWS account & it cannot be restricted
    * with Identity and Access Management (IAM), you can create other identities inside the account
+     * different types of identities such as IAM users, IAM groups, & IAM roles
+     * all of these types of identities start off with no access to the AWS account
