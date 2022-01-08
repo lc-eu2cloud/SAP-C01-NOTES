@@ -20,4 +20,6 @@
     * different types of identities such as IAM users, IAM groups, & IAM roles
     * all of these IAM identities start off with no access to the AWS account, but can be given full or limited access rights over this one specific AWS account
   * IAM service dedicated to your account (unless you specify otherwise, any IAM identities in your account won't be able to access another account)
-    *  
+  * AWS Account Boundary: can keep things inside the account from getting out, & can keep things outside the account from getting in
+    * example of how AWS accounts are really good at containing any damage caused within those accounts
+      * mistake caused by inexperienced system administrator or a bad actor attempting to intentionally harm your account    
