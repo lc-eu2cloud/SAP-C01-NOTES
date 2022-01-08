@@ -11,11 +11,11 @@
     * account root user cannot be restricted (will always have full access to everything within the AWS account it belongs to)
     * if username & password of account root user ever become known, results can be disastrous (everything in the AWS account can be deleted)
    * credit card you provide when you create the AWS account is set as the account payment method
-     * when you create resources within an AWS account, any of those resources with billable usage will be billed to the account payment method (aside: AWS known as pay-as-you-go platform)
+     * when you create resources within an AWS account, any of those resources with billable usage will be billed to the account payment method
     * certain services include certain allocation of free usage per month (known as AWS free tier)
  
  * AWS account security
    * as before, account root user has full control over an AWS account & it cannot be restricted
    * with Identity and Access Management (IAM), you can create other identities inside the account
      * different types of identities such as IAM users, IAM groups, & IAM roles
-     * all of these types of identities start off with no access to the AWS account
+     * all of these IAM identities start off with no access to the AWS account, but can be given full or limited access rights over this one specific AWS account
