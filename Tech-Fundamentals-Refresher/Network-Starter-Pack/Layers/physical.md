@@ -9,4 +9,4 @@ Scenario
     * point to point electrical shared medium between the two devices
     * piece of cable that can be used to transmit electrical signals between the two network interface cards
 * physical medium can be copper (uses electrical signals), fibre (uses light), wifi (uses radio frequency or RF)
-![Layer 1: Physical - Game Example](https://postimg.cc/7fvckZfP)
+![Layer 1: Physical - Game Example](https://i.postimg.cc/vHDd51yn/image5.png)
