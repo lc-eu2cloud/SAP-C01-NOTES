@@ -13,10 +13,10 @@ Scenario
 * no matter what the type of physical medium used, it needs a way to be able to carry unstructured (raw) information
 * what solves that? Layer 1 or physical layer standards known as specifications:
   * define how to transmit & receive raw bit streams (1s & 0s) between a device & shared physical medium (in this scenario: a piece of copper network cable between 2 laptops)
-  * define things like voltage levels, timings, data rates, usable distances, modulation method, & the connector type on each end of the physical cable
+  * also define things like voltage levels, timings, data rates, usable distances, modulation method, & the connector type on each end of the physical cable
   * in this scenario, mean both laptops have a shared understanding of the same physical medium (cable)
     * both laptops can use this physical medium to send & receive raw data
     * for a copper cable, electrical signals are used
       * a certain voltage defined as binary 1 (1 volt) & a certain voltage defined as binary 0 (-1 volt)
-      * if both network cards in both laptops use the same standard (meaning they agree), then 0s & 1s can be transmitted onto the medium by the left laptop & received from the medium by the right laptop
-      * how 2 networking devices/2 network interface cards can communnicate at layer 1
+    * if both network cards in both laptops use the same standard (meaning they agree), then 0s & 1s can be transmitted onto the medium by the left laptop & received from the medium by the right laptop
+    * how 2 networking devices/2 network interface cards can communnicate at layer 1
