@@ -30,3 +30,5 @@
     * AWS accounts are great for keeping bad things, inside one specific part of your AWS environment
   * by default, all access to an AWS account is denied, unless you configure otherwise, except for the account root user (which always has full control)
     * this means external identities (users) are denied, by default, if they attempt to access your AWS account
+![External identity explictly granted access to an AWS account](https://i.postimg.cc/PxTqNt2m/image6.png)
+  * external identities, can be granted access to an AWS account like Julie in the middle (image above), if you explicitly allow this access
