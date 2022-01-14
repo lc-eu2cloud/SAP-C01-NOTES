@@ -18,12 +18,12 @@
   * image below: key "adrianscats" is a list of dictionaries where each dictionary contains a 'name' key, with a value, 'color' key with a value, then for final list item, a 3rd element, a 'numofeyes' key:value pair
 ![list item:dictionary/structure example](https://i.postimg.cc/rF5BghY6/image.png)
   * values can be represented as strings, numbers, floating point, booleans, lists, dictionaries, or a combination of any of them
-* through YAML, key:value pairs, lists, & dictionaries allow you to build complex data structures in a human readable way (e.g. database of someone's cats) (t)
+* through YAML, key:value pairs, lists, & dictionaries allow you to build complex data structures in a human readable way (e.g. database of someone's cats)
 * YAML files can be read into or written out by an application, & commonly used for storage/transmission of configurations 
 * #### CloudFormation (CFN) ####
   * YAML template (image below):
     * 'Resources' section is a dictionary, within it a key 's3bucket', which is also a dictionary containing 'Type' & 'Properties' keys
-      * Type is a key that has string value, Properties is a dictionary containing 'BucketName' where BucketName is a key with value of "ac1337catpics" (string) (t)
+      * Type is a key that has string value, Properties is a dictionary containing 'BucketName' where BucketName is a key with value of "ac1337catpics" (string)
   ![yaml CFN template excerpt example](https://i.postimg.cc/7ZzQsg3M/image2-resize.png)
     * indentation levels (image above - highest level of indentation -> lowest):
       * 'BucketName' is nested within 'Properties'
