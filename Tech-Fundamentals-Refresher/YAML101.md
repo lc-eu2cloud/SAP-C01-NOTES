@@ -1,7 +1,7 @@
 ## YAML101 - YAML AINT MARKUP LANGUAGE ##
 
 #### YAML Introduction ####
-* YAML: human readable data serialization language that specifies a consistent data structure conversion format for data storage/transmission using Unicode character set
+* YAML: a human readable data serialization language that specifies a consistent data structure conversion format for data storage/transmission using a Unicode character set
   * format: key:value pairs, lists, dictionaries
 * #### key:value ####
   * in a YAML document: you will find an unordered collection of key:value pairs where each key has a corresponding value
@@ -24,15 +24,15 @@
   * YAML template (image below):
     * 'Resources' section is a dictionary, within it a key 's3bucket', which is also a dictionary containing 'Type' & 'Properties' keys
       * Type is a key that has string value, Properties is a dictionary containing 'BucketName' where BucketName is a key with value of "ac1337catpics" (string)
-  ![yaml CFN template excerpt example](https://i.postimg.cc/7ZzQsg3M/image2-resize.png)
+  ![yaml CFN template excerpt](https://i.postimg.cc/7ZzQsg3M/image2-resize.png)
     * indentation levels (image above - highest level of indentation -> lowest):
       * 'BucketName' is nested within 'Properties'
       * 'Type' & 'Properties' with same level of indentation, are nested within 's3bucket'
       * 's3bucket' is nested within 'Resources'
       * 'Resources' is a top-level key:value pair within the YAML template
     * Summary:
-      * 'Resources' is a key:value pair where the value is a dictionary with 1 key:value pair (s3bucket) (t)
-      * 's3bucket' is a key:value pair with a dictionary that has 2 key:value pairs (Type & Properties) (t)
+      * 'Resources' is a key:value pair where the value is a dictionary with 1 key:value pair (s3bucket)
+      * 's3bucket' is a key:value pair where the value is a dictionary with 2 key:value pairs (Type & Properties)
         * 'Type' is a key:value pair which controls what type of resource is created (in this example, an s3 bucket)
         * 'Properties' is a key:value pair where the value is a dictionary with 1 key:value pair (BucketName)
           * 'BucketName' is a key:value pair where the value is a string that controls the name of the s3 bucket (the physical resource that will be created by CloudFormation) (t)  
