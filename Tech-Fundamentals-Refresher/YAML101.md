@@ -4,13 +4,13 @@
 * YAML: human readable data serialization language that specifies a consistent data structure conversion format for data storage/transmission using Unicode character set
   * format: key:value pairs, lists, dictionaries
 * #### key:value ####
-  * YAML document: unordered collection of key:value pairs where each key has a corresponding value
+  * in a YAML document: you will find an unordered collection of key:value pairs where each key has a corresponding value
     * YAML supports representing keys & values as strings, numbers, floating point, boolean, and null 
 * #### lists ####
   * generally known as an ordered set of values (can be also be called arrays, programming language-dependent)
-  * YAML can represent a list using a key where the value is a set of comma separated elements [&] <-inline format (t)
+  * YAML can represent a list using a key where the value is a set of comma separated elements [&] <- the inline format
   * can also be represented as "key:\n space hyphen then the value"
-    * values can be enclosed in "",'', or not (all are optional & valid), however enclosing allows you to be more precise & avoid confusion (t)
+    * values can be enclosed in "",'', or not (all options are valid), however enclosing allows you to be more precise & avoid confusion
     * indentation REALLY matters (ALWAYS uses spaces), for example, list items (ALWAYS denoted by hyphen) with same level of indentation (space hyphen) are all part of the same list
       * YAML can also represent nested lists using different levels of indentation 
 * #### Structure (Dictionary) ####
