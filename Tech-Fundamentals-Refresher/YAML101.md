@@ -33,6 +33,6 @@
     * Summary:
       * 'Resources' is a key:value pair where the value is a dictionary with 1 key:value pair (s3bucket)
       * 's3bucket' is a key:value pair where the value is a dictionary with 2 key:value pairs (Type & Properties)
-        * 'Type' is a key:value pair which controls what type of resource is created (in this example, an s3 bucket)
+        * 'Type' is a key:value pair where the value is a string which controls what type of resource is created (in this example, a s3 bucket)
         * 'Properties' is a key:value pair where the value is a dictionary with 1 key:value pair (BucketName)
-          * 'BucketName' is a key:value pair where the value is a string that controls the name of the s3 bucket (the physical resource that will be created by CloudFormation) (t)  
+          * 'BucketName' is a key:value pair where the value is a string that controls the name of the s3 bucket (the physical resource that will be created by CloudFormation)  
