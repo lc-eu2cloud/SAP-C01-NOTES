@@ -25,4 +25,8 @@ Scenario
 Scenario
 * in the previous scenario, 2 laptops used a point-to-point layer 1 link (or network cable) to communicate, but what if we need to add more devices? (2 more devices or players, for a total of 4)
 * we can't connect these 4 devices to a network cable with only 2 connectors, but we can add a networking device called a hub (in this scenario, a 4-port hub)
-  *   
+![Layer 1: Physical - Game Example - 4-port hub](https://i.postimg.cc/W1t02Kfp/image7.png)
+  * instead of the left & right laptop being connected to each other directly, are now connected to 2 ports of this hub
+  * since this hub has 4 ports, it also means it has 2 ports free; it can accommodate the top & bottom laptops
+* hubs have 1 job:
+  * anything the hub receives, on any of its ports, is retransmitted to all of the other ports (1)
