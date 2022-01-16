@@ -22,9 +22,9 @@
 * YAML files can be read into or written out by an application, & commonly used for storage/transmission of configurations 
 * #### CloudFormation (CFN) ####
   * YAML template (image below):
-    * 'Resources' section is a dictionary, within it a key 's3bucket', which is also a dictionary containing 'Type' & 'Properties' keys
-      * Type is a key that has string value, Properties is a dictionary containing 'BucketName' where BucketName is a key with value of "ac1337catpics" (string)
-  ![yaml CFN template excerpt](https://i.postimg.cc/7ZzQsg3M/image2-resize.png)
+    * 'Resources' section which is a dictionary, within it a key 's3bucket', which is also a dictionary containing 'Type' & 'Properties' keys
+      * Type has a string value, Properties is a dictionary containing 'BucketName' where BucketName is a key with value of "ac1337catpics" (string)
+  ![CFN yaml template excerpt](https://i.postimg.cc/7ZzQsg3M/image2-resize.png)
     * indentation levels (image above - highest level of indentation -> lowest):
       * 'BucketName' is nested within 'Properties'
       * 'Type' & 'Properties' with same level of indentation, are nested within 's3bucket'
