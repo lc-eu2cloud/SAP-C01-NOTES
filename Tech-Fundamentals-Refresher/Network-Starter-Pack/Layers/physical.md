@@ -11,7 +11,7 @@ Scenario
 * a physical medium can be copper (uses electrical signals), fibre (uses light), or wifi (uses radio frequency or RF)
 ![Layer 1: Physical - Game Example](https://i.postimg.cc/vHDd51yn/image5.png)
 * no matter what the type of physical medium used, it needs a way to be able to carry unstructured (raw) information
-* what solves that? Layer 1 or physical layer standards known as specifications:
+* what solves this? Layer 1 or physical layer standards known as specifications:
   * define how to transmit & receive raw bit streams (1s & 0s) between a device & shared physical medium (in this scenario: a piece of copper network cable between 2 laptops)
   * also define things like voltage levels, timings, data rates, usable distances, modulation method, & the connector type on each end of the physical cable
   * in this scenario, mean both laptops have a shared understanding of the same physical medium (cable)
@@ -29,4 +29,7 @@ Scenario
   * instead of the left & right laptop being connected to each other directly, are now connected to 2 ports of this hub
   * since this hub has 4 ports, it also means it has 2 ports free; it can accommodate the top & bottom laptops
 * hubs have 1 job:
-  * anything the hub receives, on any of its ports, is retransmitted to all of the other ports (1)
+  * anything the hub receives, on any of its ports, is retransmitted to all of the other ports; including any errors & collisions (1)
+    * conceptually, this hub creates a 4-connector network cable (one single piece of physical medium these 4 devices can be connected to)
+* NOTE: for Layer 1 networking: there are no individual device addresses, 1 laptop cannot address traffic directly at another, as layer 1 is a broadcast medium
+  * for example, the network card on the left laptop transmits onto the physical medium, & everything else receives it 
