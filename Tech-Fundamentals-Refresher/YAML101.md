@@ -23,7 +23,7 @@
 * #### CloudFormation (CFN) ####
   * YAML template (image below):
     * 'Resources' section which is a dictionary, within it a key 's3bucket', which is also a dictionary containing 'Type' & 'Properties' keys
-      * Type has a string value, Properties is a dictionary containing 'BucketName' where BucketName is a key with value of "ac1337catpics" (string)
+      * Type has a string value, while Properties is a dictionary containing 'BucketName' where BucketName is a key with value of "ac1337catpics" (string)
   ![CFN yaml template excerpt](https://i.postimg.cc/7ZzQsg3M/image2-resize.png)
     * indentation levels (image above - highest level of indentation -> lowest):
       * 'BucketName' is nested within 'Properties'
