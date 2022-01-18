@@ -15,6 +15,6 @@
     * how data moves between point A & point B (ie on your local network or across the globe)
   * host layers (transport, session, presentation, application)
     * how data is segmented & reassembled for transport & formatted so that both sides of a network connection can understand it
-* Conceptual High-level OSI model overview
+* High-Level Conceptual OSI model overview
   * Layer 7: web browser at one end of the connection & web server at the other end of the connection
-  * Layer 1: physical network cards/interfaces; any data from the web browser flows down through the layers at one side of the connection, arrives at the other side of the connection, then flows back up through the layers, to the web server software at the application layer
+  * Layer 1: physical network cards/interfaces; any data from the web browser flows down through the layers at one end of the connection, arrives at the other end of the connection, then flows back up through the layers, to the web server software at the application layer
