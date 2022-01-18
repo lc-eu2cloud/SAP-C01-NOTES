@@ -32,4 +32,9 @@ Scenario
   * anything the hub receives, on any of its ports, is retransmitted to all of the other ports; including any errors & collisions (1)
     * conceptually, this hub creates a 4-connector network cable (one single piece of physical medium these 4 devices can be connected to)
 * NOTE: for Layer 1 networking: there are no individual device addresses, 1 laptop cannot address traffic directly at another, as layer 1 is a broadcast medium
-  * for example, any time the network card on the left laptop transmits onto the physical medium, everything else receives it 
+  * for example, any time the network card on the left laptop transmits onto the physical medium, everything else receives it
+    * it's like shouting into a room with 3 other people, & not using any names (a limitation of layer 1, that's fixed by layer 2)
+* it's possible that 2 devices might try to transmit all at once, if this happens, then there will be a collision
+  * this corrupts any transmissions on the shared medium; only 1 device, can trasmit, at a time on a shared medium & be readable to everything else
+* Layer 1 has no media access control, no method of controlling which devices can trasmit
+  * 
