@@ -18,7 +18,7 @@ Scenario
     * both laptops can use this physical medium to send & receive raw data
     * for a copper cable, electrical signals are used
       * a certain voltage defined as binary 1 (1 volt) & a certain voltage defined as binary 0 (-1 volt)
-    * if both network cards in both laptops use the same standard (meaning they both agree), then 0s & 1s can be transmitted onto this physical medium by the left laptop & received from this medium by the right laptop
+    * if both network cards in both laptops use the same standard (meaning they both agree), then 0s & 1s can be transmitted onto the medium by the left laptop & received from the medium by the right laptop
     * how 2 networking devices/2 network interface cards can communnicate at layer 1
 * additionally: using the OSI 7-Layer model, you would see that a layer X device understands & contains functionality for that layer & anything below it (unless it's a layer 1 device, which just understands layer 1) 
 #### Layer 1 - Physical - HUB ####
