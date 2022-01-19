@@ -10,7 +10,7 @@ Scenario
     * a piece of cable which can be used to transmit electrical signals between the two network interface cards
 * a physical medium can be copper (uses electrical signals), fiber (uses light), or wifi (uses radio frequency or RF)
 ![Layer 1: Physical - Game Example](https://i.postimg.cc/vHDd51yn/image5.png)
-* no matter what the type of physical medium used, it needs a way to be able to carry unstructured (raw) information
+* no matter the type of physical medium used, it needs a way to be able to carry unstructured (raw) information
 * what solves this? Layer 1 or physical layer standards known as specifications:
   * define how to transmit & receive raw bit streams (1s & 0s) between a device & a shared physical medium (in this scenario: a piece of copper network cable between 2 devices)
   * also define things like voltage levels, timings, data rates, usable distances, modulation method, & the type of connector on each end of the physical cable
@@ -37,4 +37,5 @@ Scenario
 * it's possible that 2 devices might try to transmit all at once, if this happens, then there will be a collision
   * this corrupts any transmissions on the shared medium; only 1 device, can trasmit, at a time on a shared medium & be readable to everything else
 * Layer 1 has no media access control, no method of controlling which devices can trasmit
-  * 
+  * using a layer 1 architecture, like in this scenario (4 laptops or 4 network interface cards connected a 4-port hub), collisions are almost guaranteed
+    * the likelihood of collisions increases, the more layer 1 devices present, on the same layer 1 network 
