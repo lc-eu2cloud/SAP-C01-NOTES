@@ -29,7 +29,7 @@ Scenario
   * instead of the left & right laptop being connected to each other directly, are now connected to 2 ports on this hub
   * since this hub has 4 ports, it also means it has 2 ports free; it can accommodate the top & bottom laptops
 * hubs have 1 job:
-  * anything the hub receives, on any of its ports, is retransmitted to all of the other ports; including any errors & collisions (1)
+  * anything the hub receives, on any of its ports, is retransmitted to all of the other ports; including any errors & collisions
     * conceptually, this hub creates a 4-connector network cable (one single piece of physical medium these 4 devices can be connected to)
 * NOTE: for Layer 1 networking: there are no individual device addresses, 1 laptop cannot address traffic directly at another, as layer 1 is a broadcast medium
   * for example, any time the network card on the left laptop transmits onto the physical medium, everything else receives it
@@ -50,4 +50,4 @@ Summary
 #### Layer 1 - Physical ####
 Summary (assuming we only have, layer 1 networking)
 * Layer 1:
-  * focuses on the physical shared medium (the standards for transmitting onto the medium, & the standards for receiving, from the shared medium)
+  * focuses on the physical shared medium (the standards for transmitting onto the medium, & the standards for receiving from the shared medium)
