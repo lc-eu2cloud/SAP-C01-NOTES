@@ -39,7 +39,7 @@ Scenario
 * Layer 1 has no media access control, no method of controlling which devices can trasmit
   * using a layer 1 architecture, like in this scenario (4 laptops or 4 network interface cards connected to a 4-port hub), collisions are almost guaranteed
     * the likelihood of collisions increases, the more layer 1 devices present, on the same layer 1 network
-    * Layer 1 is not able to detect, when collisions occur (these network cards are just transmitting via voltage changes, on the shared medium ; it's not digital: it's an analog signal which can transmit binary data) 
+    * Layer 1 is not able to detect, when collisions occur (these network cards are just transmitting via voltage changes, on the shared medium; it's not digital: it's an analog signal which can transmit binary data) 
       * in theory, these network cards can all transmit at the same time
 Summary
 * to reiterate, layer 1 doesn't have any capability beyond the specifications it defines, that all of the devices will use to transmit onto the shared medium, & receive from the shared medium
@@ -51,3 +51,8 @@ Summary
 Summary (assuming we only have, layer 1 networking)
 * Layer 1:
   * focuses on the physical shared medium (the standards for transmitting onto the medium, & the standards for receiving from the shared medium)
+    * all devices a part of the same layer 1 network, need to be using the same layer 1 medium & device standards
+    * generally this means, a certain type of network card & a certain type of cable, OR wifi cards using certain types of antennas & frequency ranges
+  * doesn't provide any form of access control on the shared medium, & it doesn't give us any uniquely identifiable devices
+    * 
+
