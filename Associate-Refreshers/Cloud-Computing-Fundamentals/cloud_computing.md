@@ -24,7 +24,9 @@ Cloud Computing (5 Essential Characteristics)
     * instead of businesses buying for their own needs (ie 10 servers for company X, 10 servers for company Y), the cloud vendor might procure 10,000 servers for use for part of their customer base (larger scale means larger economies of scale) 
       * (revisit later)
     * pooling allows for easier scaling whenever a customer needs it
-    * when communicating or using a platform such as AWS, Google, or Azure, instead of seeing a mention of "your servers" or "your storage", you allocate it from a pool & return it to that pool when it's no longer required
+  * when communicating or using a platform such as AWS, Google, or Azure, instead of seeing a mention of "your servers" or "your storage", you allocate it from a pool & return it to that pool when it's no longer required, while the vendor is managing that capacity behind the scenes
+  * what cloud does, is it has isolation between customers (your data is only visible to you)
+    * one of the benefits of pooling: even though the cloud vendor is using pooling, & even though you & another business are probably sharing hardware, you would never know each other existed 
 
 
 
