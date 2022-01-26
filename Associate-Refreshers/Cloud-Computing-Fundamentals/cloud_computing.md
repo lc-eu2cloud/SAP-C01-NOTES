@@ -26,8 +26,11 @@ Cloud Computing (5 Essential Characteristics)
     * pooling allows for easier scaling whenever a customer needs it
   * when communicating or using a platform such as AWS, Google, or Azure, instead of seeing a mention of "your servers" or "your storage", you allocate it from a pool & return it to that pool when it's no longer required, while the vendor is managing that capacity behind the scenes
   * what cloud does, is it has isolation between customers (your data is only visible to you)
-    * one of the benefits of pooling: even though the cloud vendor is using pooling, & even though you & another business are probably sharing hardware, you would never know each other existed 
-
-
-
-
+    * one of the benefits of pooling: even though the cloud vendor is using pooling, & even though you & another business are probably sharing hardware, you would never know each other existed
+* #4 - Rapid Elasticity
+  * "Capabilities can be elastically provisioned & released to scale rapidly outward & inward with demand" (in this context, capabilities are resources)
+  * "To the consumer, the capabilities available for provisioning often appear to be unlimited"
+    * with elasticity, a system can start off small & when system load increases, the system size increases & when system load decreases, the system can reduce in size
+    * (revisit later)
+* #5 - Measured Service
+  * "Resource usage can be **_monitored_**, **_controlled_**, **_reported_**, & **_BILLED_**"
