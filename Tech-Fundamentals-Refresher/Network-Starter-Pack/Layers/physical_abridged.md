@@ -17,14 +17,12 @@ Scenario: 2 laptops on a local network, want to play a local area network (LAN) 
 * this scenario shows how 2 networking devices/2 network interface cards can communnicate at layer 1
 * using OSI 7-layer model: layer X device understands & contains functionality for that layer & anything below it (layer 1 device just understands layer 1) 
 #### Layer 1 - Physical - HUB ####
-Scenario (need to add 2 more devices for a total of 4, 4 devices can't connect to a network cable with only 2 connectors)
-* 4 devices can connect to the 4-port hub (left & right laptop no longer connected directly like in previous scenario)
+Scenario (need to add 2 more devices or players for a total of 4, 4 devices can't connect to a network cable with only 2 connectors)
+* 4 devices can connect to a 4-port hub (left & right laptop no longer connected directly like in previous scenario)
 ![Layer 1: Physical - Game Example - 4-port hub](https://i.postimg.cc/W1t02Kfp/image7.png)
 * since this hub has 4 ports, it also has 2 ports free; it can accommodate the top & bottom laptops
 * hubs have 1 job: anything it receives on any of its ports, is retransmitted to all of the other ports (including any errors & collisions)
-  * conceptually, this hub creates a 4-connector network cable (one single piece of physical medium these 4 devices can be connected to)
 * NOTE: layer 1 is a broadcast medium: no individual device addresses (ie 1 laptop cannot address traffic directly at another)
-  * for example, any time the network card on the left laptop transmits onto the physical medium, everything else receives it
 * a collision corrupts any transmissions on the shared medium (only 1 device can transmit at a time & be readable to everything else)
 * Layer 1 has no media access control (no method of controlling which devices can trasmit)
   * the likelihood of collisions increases, the more layer 1 devices present, on the same layer 1 network
