@@ -31,7 +31,7 @@ Scenario (need to add 2 more devices or players for a total of 4, 4 devices can'
 * in theory, network cards can all transmit at the same time
 
 Summary
-* layer 1 doesn't have any capability beyond the specifications it defines (all devices will use specifications to transmit onto the shared medium, & receive from the shared medium)
+* layer 1 doesn't have any capability beyond the specifications it defines (all devices will use specifications in order to transmit onto the shared medium, & receive from the shared medium)
 * a layer 1 network has 1 broadcast domain & 1 collision domain (ie hub retransmits everything, including collisions)
 * layer 1 networks tend not to scale very well (the more devices added to a layer 1 network, the higher the chance of collisions & data corruption)
 * layer 1 is fundamental to networking (how devices ACTUALLY communicate at a physical level) & needs layer 2 (runs over the top of a working layer 1 connection), in order to be useful  
