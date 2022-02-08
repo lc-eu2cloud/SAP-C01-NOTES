@@ -39,6 +39,6 @@ Summary
 Summary (only have layer 1 networking, not interacting with the other layers)
 * Layer 1: focuses on the physical shared medium (the standards for transmitting onto the medium, & the standards for receiving from the shared medium)
 * all devices in same layer 1 network need to use the same layer 1 medium & device standards (generally: a certain type of network card & cable, OR wifi cards using certain types of antennas & frequency ranges)
-* doesn't provide any form of access control on the shared medium, & doesn't give us any uniquely identifiable devices
+* doesn't provide any form of access control on the shared medium, & doesn't give us any uniquely identifiable devices (no method for device-to-device communication)
     
 
