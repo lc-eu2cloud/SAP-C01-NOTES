@@ -1,11 +1,22 @@
 ## Network Starter Pack - 2 - Data Link - Part 1 ##
 
-### Layer 2 - Data Link - Frame (Ethernet)
+### Layer 2 - Data Link - Ethernet Frame
 **Layer 2 Fundamentals**
 * Layer 2 network requires a working layer 1 network to operate; can run on different types of layer 1 networks (cable,fiber,wifi) & provide the same layer 2 capabilities
 * Frame: format for sending information over a layer 2 network
-* MAC address: unique hardware address for every device on a network
-![Layer 2: MAC Address](https://i.postimg.cc/hPJfQX20/image8.png)
+* MAC address: unique hardware address for every device on a network (generally: MAC address uniquely attached to a specific piece of hardware, not software assigned)
+  * formed of two parts: 
+    * **organizationally unique identifier** (OUI;assigned to network device manufacturers, each with separate OUI)
+    * **network interface controller** (NIC)
+  * intended to create a globally unique MAC address on a network card
+ ![Layer 2: MAC Address](https://i.postimg.cc/hPJfQX20/image8.png)
+* Ethernet frame can be transmitted onto shared physical medium by layer 1 (handles conversion to voltages,light,or RF -> sent across the medium, & received by other devices connected to that shared medium
+  * layer 1 doesn't understand the frame itself (simply transmits raw data onto the physical medium)
+
+**Parts of a Frame** 
+* Preamble & Start Frame Delimiter (1)
+* (2)
+* (3)
 * either connect both laptops to the same wifi network or use a physical network cable
 * both laptops have network interface card & connected using a copper network cable:
   * a point-to-point electrical shared medium between the two devices
