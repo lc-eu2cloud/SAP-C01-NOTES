@@ -1,7 +1,11 @@
 ## Network Starter Pack - 2 - Data Link - Part 1 ##
 
-#### Layer 2 - Data Link ####
-Scenario: 2 laptops on a local network, want to play a local area network (LAN) game between both laptops
+### Layer 2 - Data Link - Frame (Ethernet)
+**Layer 2 Fundamentals**
+* Layer 2 network requires a working layer 1 network to operate; can run on different types of layer 1 networks (cable,fiber,wifi) & provide the same layer 2 capabilities
+* Frame: format for sending information over a layer 2 network
+* MAC address: unique hardware address for every device on a network
+![Layer 2: MAC Address](https://i.postimg.cc/hPJfQX20/image8.png)
 * either connect both laptops to the same wifi network or use a physical network cable
 * both laptops have network interface card & connected using a copper network cable:
   * a point-to-point electrical shared medium between the two devices
