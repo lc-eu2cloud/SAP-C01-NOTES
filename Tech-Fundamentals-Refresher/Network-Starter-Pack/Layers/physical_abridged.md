@@ -14,10 +14,10 @@ Scenario: 2 laptops on a local network, want to play a local area network (LAN) 
 * in this scenario, both laptops have a shared understanding of the physical medium (copper network cable) & can use this physical medium to send & receive raw data
   * electrical signals are used (binary 1 defined as 1 volt & binary 0 defined as -1 volt)
   * if both network cards in both laptops use the same standard, then 0s & 1s can be transmitted onto the medium by the left laptop & received from the medium by the right laptop
-* this scenario shows how 2 networking devices/2 network interface cards can communnicate at layer 1
+* shows how 2 networking devices/2 network interface cards can communnicate at layer 1
 * using OSI 7-layer model: layer X device understands & contains functionality for that layer & anything below it (layer 1 device just understands layer 1) 
 #### Layer 1 - Physical - HUB ####
-Scenario (need to add 2 more devices or players for a total of 4, 4 devices can't connect to a network cable with only 2 connectors)
+Scenario: need to add 2 more devices or players for a total of 4 (4 devices can't connect to a network cable with only 2 connectors)
 * 4 devices can connect to a 4-port hub (left & right laptop no longer connected directly like in previous scenario)
 ![Layer 1: Physical - Game Example - 4-port hub](https://i.postimg.cc/W1t02Kfp/image7.png)
 * since this hub has 4 ports, it also has 2 ports free; it can accommodate the top & bottom laptops
