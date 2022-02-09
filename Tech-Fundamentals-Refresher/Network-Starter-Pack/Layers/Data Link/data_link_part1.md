@@ -8,14 +8,16 @@
   * formed of two parts: 
     * **organizationally unique identifier** (OUI;assigned to network device manufacturers, each with separate OUI)
     * **network interface controller** (NIC)
-  * intended to create a globally unique MAC address on a network card
+  * together, intended to create a globally unique MAC address on a network card
  ![Layer 2: MAC Address](https://i.postimg.cc/hPJfQX20/image8.png)
 * Ethernet frame can be transmitted onto shared physical medium by layer 1 (handles conversion to voltages,light,or RF -> sent across the medium, & received by other devices connected to that shared medium
   * layer 1 doesn't understand the frame itself (simply transmits raw data onto the physical medium)
 
 **Parts of a Frame** 
-* Preamble & Start Frame Delimiter (1)
-* (2)
+* (1) Preamble & Start Frame Delimiter: allows devices to know where the start of the frame is
+* (2) Destination & Source MAC addresses: the MAC address in destination & source field of the frame
+  * MAC address in destination field specifices network device a frame can be sent to & MAC address in source field is device address of the device transmitting the frame 
+  * NOTE: inserting all F's into destination MAC address field sends a frame to all devices on local network (broadcast) & inserting a device's MAC address into source MAC address field allows it to receive replies 
 * (3)
 * either connect both laptops to the same wifi network or use a physical network cable
 * both laptops have network interface card & connected using a copper network cable:
