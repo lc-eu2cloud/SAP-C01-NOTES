@@ -21,9 +21,11 @@
 * (3) EtherType: specfies which Layer 3 protocol is puttting its data inside a frame (might be IP or Internet Protocol, common example)
   * Layer 3 uses Layer 2 frames for device-to-device communication on a local network like Layer 2 uses Layer 1 to transmit raw bit streams across a shared physical medium
   * why a device receiving a frame at the other side of the communication, needs to know which Layer 3 protocol originally put its data inside that frame
-* 
-![Layer 1: Physical - Game Example](https://i.postimg.cc/vHDd51yn/image5.png)
-
+* together, destination & source MAC address, & EtherType fields commonly known as MAC header
+  * indicates the frame destination, source, & specifies its function
+![Layer 2: MAC Header, Payload, & CRC Example](https://i.postimg.cc/Y9HYvN5C/image9.png)
+* (4) Payload: contains data the frame is sending (generally provided by layer 3 protocol specified in EtherType field & 46-1500 bytes for standard frame size)
+  * example of encapsulation:  
 Scenario: 2 devices running a game; left & right laptop connected using a network cable (shared physical medium)
 * Layer 1 software running on a network card simply transmits any data it receives onto the shared medium (no media access control)
 * Layer 2 provides controlled access to the physical medium (solves problem of both laptops sending data at the same time)
