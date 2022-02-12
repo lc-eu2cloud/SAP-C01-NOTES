@@ -3,7 +3,7 @@
 **AWS account**
 * a container of identities & AWS resources, where identities aka users (users: login to systems such as AWS; AWS resources: resources you provision inside an AWS account)
 * when you create an AWS account, you need to provide a name for the account, a unique email address only for that specific AWS account, & a payment method (ie credit card, can also be used for multiple AWS accounts)
-* the email address that you provide when creating the AWS account, is used to create a special type of identity within the AWS account, known as the account root user
+* the email address you provide when creating the AWS account, is used to create a special type of identity within the AWS account, known as the account root user
   * the account root user is the only identity (user) created with an AWS account 
   * every AWS account will have its own account root user (CANNOT overlap with another AWS account)
   * the account root user has full control over an AWS account & any resources created inside it
