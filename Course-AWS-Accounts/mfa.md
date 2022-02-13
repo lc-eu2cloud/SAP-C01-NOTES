@@ -1,27 +1,24 @@
 ## Multi-factor Authentication (MFA) ##
 
 #### MFA Overview ####
-* #### when usernames & passwords leaked, anyone can be you when logging into an application (impersonate your identity; why MFA needed) ####
-* #### Factors - different pieces of evidence used to prove one's identity/identities (single factor authentication only uses one of these factors) ####
+* #### need for MFA: username & password leakage means anyone can be you & impersonate your identity to login into an application ####
+* #### Factors - different pieces of evidence used to prove one's identity/identities (single factor authentication uses only 1 factor) ####
   * Knowledge - something you know (usernames, passwords, PINs) 
-  * Posssession - something you have (bank card: ATM requires bank card (something you have) & PIN (something you know), example of 2-factor MFA; MFA device/app)
+  * Posssession - something you have (MFA device/app, bank card)
   * Inherent - something you are (fingerprint, face scan, voice recognition, or iris scan)
-  * Location - physical location (particular set of coordinates anywhere in the world), or type of network logged into to access a system (corporate network or home wifi)
-  * More factors lead to more security & identities that harder to fake, but can be inconvenient (need balance between convenience & security)
-    * highly secure but inconvenient login process: must use username & password, MFA device/app, fingerprint or facial scan, & only within corporate network
+  * Location - physical (particular set of coordinates anywhere in the world), or network (corporate or home wifi)
+* #### More factors lead to more security & identities that harder to fake, but need balance between convenience & security
+  * requiring username & password, MFA device/app, fingerprint or facial scan, & only within corporate network (highly secure, but inconvenient)
 #### MFA within AWS ####
-* start with AWS acccount & by default, only requires username & password to log in (something you know - single factor authentication)
-* to setup MFA, need to configure MFA for identity within AWS account (ie account root user)
-  * activate MFA for account root user, AWS generates secret key (randomly generated) & all associated information the MFA app can use visually (username linked to secret key & name of the service)
-  * that information eventually needs to be entered into a MFA application (ie Google Authenticator)
-  * to make this easier, AWS uses all generated information from MFA activation & generates a QR code which encodes that information into a visual pattern
-  * Using MFA application on your phone, scan AWS generated QR code which transfers information in the QR code into MFA application as a new entry
-  * this entry in the MFA application, provides a code that generates periodically (never the same)
-  * MFA application holds one or more virtual MFAs (each virtual MFA, a virtual MFA device), each representing identities in different services (AWS, Gmail, Azure, GCP, etc)
+* start with AWS account & by default, login only requires username & password (something you know - single factor authentication)
+* MFA setup needs to configure MFA for identity within AWS account: (ie account root user)
+  * MFA activation: AWS randomly generates secret key linked to username (ie account root user)
+  * AWS generates QR code from MFA activation information, encoding it into a visual pattern
+  * MFA phone application scans QR code, transferring information from QR code into MFA application as a new entry
+  * this entry in the MFA application provides a periodically generated code (never the same)
 
-* with MFA configured for specific user, now required to enter username, password, & prompted to enter MFA code
-  * MFA code needs to be current code for correct virtual MFA on your specific authenticator application on your phone or on another device
-  * providing username & password (something you know) with MFA code (something you have) means your identity within AWS is secured using multi-factor authentication
-  * have to have all 3 to login (username, password, correct MFA code) 
-  * can still be protected if username & password leaked or you lose your MFA device (bad actor has MFA device & code) as long as they don't know your username & password
-* generally on most modern phones, MFA application will be protected with multi-factor authentication (requiring PIN code to login & potentially fingerprint/face scan to access MFA application) 
+NOTE: Each virtual MFA (a virtual MFA device) in MFA application represents identities in different services (AWS, Gmail, Azure, GCP, etc)
+* with MFA configured for specific user, login now requires username, password, & MFA code
+  * MFA code needs to be current code from correct virtual MFA on specific authenticator application (a phone or another device) 
+* providing username & password (something you know) with MFA code (something you have) means your identity within AWS is secured using multi-factor authentication
+* protected if username & password leaked or if bad actor has MFA device & code, but not username & password
