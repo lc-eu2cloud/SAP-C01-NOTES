@@ -1,10 +1,12 @@
 ## Identity and Access Management (IAM) Basics
 
 **IAM Basics**
-* In most real-world situations, you want to be able to grant other people in your organization, access to your AWS account (ie might be users, groups, or applications they manage)
+
+Introduction
+* In most real-world situations, you want capability to grant other people in your organization, access to your AWS account (ie might be users, groups, or applications they manage)
 * generally want to _restrict_ the access that these people, groups, or applications have 
 * BEST PRACTICE: least privileged access - you only give the permissions required to do a job or perform a task (ALWAYS! DO! THIS!)
-* problematic only having a single identity in the account (account root user), if the account root user's credentials are leaked, then the damaage could be account-wide
+* problematic only having a single identity in the account (account root user), if the account root user's credentials are leaked, then the damage could be account-wide
 * need a way to allow more control over what access is given to our AWS accounts (solved by the IAM service)
 
 IAM Service
@@ -16,3 +18,11 @@ IAM Service
 * can create different types of identities that it manages
   * if any of these IAM identities allowed to perform an action, AWS account automatically trusts the identity in same way it trusts IAM 
 ![IAM Service - AWS Account trusts IAM](https://i.postimg.cc/KYfn1BWw/image11.png)
+
+Identity object types in IAM & IAM Policy Document
+* IAM lets you create 3 different types of identity objects (IAM users, IAM groups, IAM roles)
+* IAM users: represent humans or applications that need access to your AWS account
+* IAM groups: collections of related users (ie dev team)
+* IAM roles: identity that can be used by AWS services or for granting external access to an AWS account
+* Choosing between IAM users & IAM roles
+  * 
