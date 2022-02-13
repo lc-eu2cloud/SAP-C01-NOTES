@@ -9,9 +9,9 @@
   * full control over an AWS account & any resources created inside it
   * cannot be restricted (will always have full access to everything within the AWS account it belongs to)
   * results can be disastrous if username & password ever becomes known (everything in that AWS account can be deleted)
-* the payment method (ie credit card) you provide when you create the AWS account, is set as the account payment method
+* the payment method (ie credit card) provided from AWS account creation, is set as the account payment method
   * any resources you create inside an AWS account with billable usage, will be billed to the account payment method
-* certain services include a certain allocation of free usage per month, known as the AWS free tier
+* AWS Free Tier: certain services including a certain allocation of free usage per month
  
 **AWS Account Security**
 * the account root user has full control over an AWS account & cannot be restricted
