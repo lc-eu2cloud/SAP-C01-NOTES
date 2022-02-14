@@ -20,7 +20,7 @@ IAM Service
 ![IAM Service - AWS Account trusts IAM](https://i.postimg.cc/KYfn1BWw/image11.png)
 
 Identity object types in IAM & IAM Policy Document
-* IAM lets you create 3 different types of identity objects (IAM users, IAM groups, IAM roles)
+* can create 3 different types of identity objects in IAM (IAM users, IAM groups, IAM roles)
 * IAM users: represent humans or applications that need access to an AWS account
 * IAM groups: collections of related users (ie dev team)
 * IAM roles: identity that can be used by AWS services or for granting external access to an AWS account
