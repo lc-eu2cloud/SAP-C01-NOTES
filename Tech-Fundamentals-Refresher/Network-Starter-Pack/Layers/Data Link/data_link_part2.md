@@ -1,12 +1,20 @@
 ## Network Starter Pack - 2 - Data Link - Part 2 ##
 
-### Layer 2 - Data Link - Ethernet Frame
-**Layer 2 Fundamentals**
-* Layer 2 network requires a working layer 1 network to operate; can run on different types of layer 1 networks (cable,fiber,wifi) & provide the same Layer 2 capabilities
-* Frame: format for sending information over a layer 2 network
-* MAC address: unique hardware address for every device on a network, formed of two parts:
-  * **organizationally unique identifier** (OUI;assigned to network device manufacturers, each with separate OUI)
-  * **network interface controller** (NIC)
+### Layer 2 - Data Link - CSMA/CD
+**Continuation from Part 1:** 2 devices running a game; left & right laptop connected using a network cable (shared physical medium)
+
+Review
+* Layer 2 uses Layer 1 & needs it in place & working for Layer 2 network to be active
+* left & right laptop's networking stack (networking software layers) now both have working Layer 1 & Layer 2 network
+* Game communication: uses Layer 2 network (each device now has MAC address: hardware address for each network interface card)
+
+Transmitting Data: game on left laptop wants to send something to game on right laptop
+* Starting point: game communication via Layer 2 software creating Ethernet frame (F1); left laptop knows MAC address of right laptop
+* right laptop's MAC address (ending in 5b:76) is in F1's destination MAC address field
+* F1's payload contains the data to send to game on right laptop
+
+CSMA (Carrier Sense, Multiple Access)
+
   * together, intended to create a globally unique MAC address on a network card
  ![Layer 2: MAC Address](https://i.postimg.cc/hPJfQX20/image8.png)
 * Ethernet frame can be transmitted onto shared physical medium by layer 1 
