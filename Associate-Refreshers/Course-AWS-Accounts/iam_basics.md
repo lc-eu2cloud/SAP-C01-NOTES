@@ -10,7 +10,7 @@ Introduction
 * need a way to allow more control over what access is given to our AWS accounts (solved by the IAM service)
 
 IAM Service
-* Every AWS account has its own running copy (database) of IAM
+* Every AWS account comes with its own running copy (database) of IAM
 * globally resilient: data always secure across all AWS regions
 * An AWS account trusts its own dedicated IAM instance (separate from IAM instances of other AWS accounts)
 * operationally same as account root user (trusted fully by AWS account, can do as much as account root user with some restrictions)
@@ -21,7 +21,7 @@ IAM Service
 
 Identity object types in IAM & IAM Policy Document
 * IAM lets you create 3 different types of identity objects (IAM users, IAM groups, IAM roles)
-* IAM users: represent humans or applications that need access to your AWS account
+* IAM users: represent humans or applications that need access to an AWS account
 * IAM groups: collections of related users (ie dev team)
 * IAM roles: identity that can be used by AWS services or for granting external access to an AWS account
 * Choosing between IAM users & IAM roles
