@@ -23,7 +23,7 @@ CSMA (Carrier Sense, Multiple Access)
 * how game communication can work using Layer 2: 
   * uses Layer 1 to transmit & receive raw data
   * adds MAC addresses on top of Layer 1: allowing for device-to-device communication & adding media access control
- ![Layer 2: MAC Address](https://i.postimg.cc/hPJfQX20/image8.png)
+ ![Layer 2: Game Example - CSMA](https://i.postimg.cc/HsvwMktW/image12.png)
 * Ethernet frame can be transmitted onto shared physical medium by layer 1 
 * layer 1 handles conversion to voltages,light,or RF -> sent across the medium, received by other devices connected to shared medium
 * layer 1 doesn't understand the frame itself (simply transmits raw data onto the physical medium)
