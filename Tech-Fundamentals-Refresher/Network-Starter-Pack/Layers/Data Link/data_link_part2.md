@@ -16,10 +16,10 @@ Transmitting Data: game on left laptop wants to send something to game on right 
 CSMA (Carrier Sense, Multiple Access)
 * function: sense a carrier signal (seen on layer 1 network when any other network device is transmitting at that point in time)
 * how it works: Layer 2's part of left laptop's networking stack communicates with Layer 1 part (looks for any signs of carrier signal)
-  * Layer 2 passes frame to Layer 1 when it doesn't sense a carrier; Layer 1 simply sees the frame as a block of data to transmit
-  * On right side, layer 1 software receives raw bitstream transmitted onto shared medium by left side & passes it Layer 2
-  * Layer 2 analyzes the frame's destination MAC address & sees right laptop's MAC address ("I'm the destination!")
-  * Layer 2 can now pass data contained in frame's payload to the game
+  * Layer 2 passes F1 to Layer 1 when it doesn't sense a carrier; Layer 1 simply sees F1 as a block of data to transmit
+  * On right side, layer 1 software receives raw bitstream transmitted onto shared medium by left side & passes it to Layer 2
+  * Layer 2 analyzes F1's destination MAC address & sees right laptop's MAC address ("I'm the destination!")
+  * Layer 2 can now pass the data contained in F1's payload to the game
 * how game communication can work using Layer 2: 
   * uses Layer 1 to transmit & receive raw data
   * adds MAC addresses on top of Layer 1: allowing for device-to-device communication & adding media access control
