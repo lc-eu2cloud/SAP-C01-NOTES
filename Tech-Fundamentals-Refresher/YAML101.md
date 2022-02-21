@@ -11,7 +11,7 @@
   * YAML can represent a list using a key where the value is a set of comma separated elements [&] <- the inline format
   * can also be represented as "key:\n space hyphen then the value"
     * values can be enclosed in "",'', or not (all options are valid), however enclosing allows you to be more precise & avoid confusion
-    * indentation REALLY matters (ALWAYS uses spaces), for example, list items (ALWAYS denoted by hyphen) with same level of indentation (space hyphen) are all part of the same list
+    * indentation REALLY matters (ALWAYS uses spaces), for example, list items (ALWAYS denoted by hyphen, excluding inline format) with same level of indentation (space hyphen) are all part of the same list
       * YAML can also represent nested lists using different levels of indentation 
 * #### Structure (Dictionary) ####
   * dictionary: a structure of an unordered set of 1 or more key:value pairs
