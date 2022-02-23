@@ -5,7 +5,7 @@
 Introduction
 * In most real-world situations, you want capability to grant other people in your organization, access to your AWS account (ie might be users, groups, or applications they manage)
 * generally want to _restrict_ the access that these people, groups, or applications have 
-* BEST PRACTICE: least privileged access - you only give the permissions required to do a job or perform a task (ALWAYS! DO! THIS!)
+* BEST PRACTICE: least privileged access - only give the permissions required to do a job or perform a task (ALWAYS! DO! THIS!)
 * problematic only having an account root user in the account, if the account root user's credentials are leaked, then the damage could be account-wide
 * need a way to allow more control over what access is given to our AWS accounts (solved by the IAM service)
 
