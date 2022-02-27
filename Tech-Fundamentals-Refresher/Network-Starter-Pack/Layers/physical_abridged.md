@@ -2,7 +2,7 @@
 
 #### Layer 1 - Physical ####
 * `Scenario: 2 laptops on a local network, want to play a local area network (LAN) game between both laptops`
-* either connect both laptops to the same wifi network or use a physical network cable  
+* either connect both laptops to the same wifi network or use a physical network cable
 * both laptops have network interface card & connected using a copper network cable:
   * point-to-point electrical shared medium between the two devices
   * piece of cable which can be used to transmit electrical signals between the two network interface cards
@@ -19,20 +19,18 @@
 * using OSI 7-layer model: layer X device understands & contains functionality for that layer & anything below it 
 * layer 1 device just understands layer 1
 #### Layer 1 - Physical - HUB ####
-Scenario: need to add 2 more devices or players for a total of 4 (4 devices can't connect to a network cable with only 2 connectors)  
-\- 4 devices can connect to a 4-port hub (left & right laptop no longer connected directly like in previous scenario)  
+* `Scenario: need to add 2 more devices/players for a total of 4 (can't connect to network cable with only 2 connectors)`
+* 4 devices can connect to a 4-port hub (left & right laptop no longer connected directly like in previous scenario)  
 ![Layer 1: Physical - Game Example - 4-port hub](https://i.postimg.cc/W1t02Kfp/image7.png)
-  
 * since this hub has 4 ports, it has 2 ports free; it can accommodate the top & bottom laptops  
-* hubs have 1 job: retransmit anything it receives on any of its ports to all of the other ports (including any errors & collisions)  
-* NOTE: layer 1 is a broadcast medium: no individual device addresses (ie 1 laptop cannot address traffic directly at another)  
-* collision: corrupts any transmissions on the shared medium (only 1 device can transmit at a time & be readable to everything else)  
-* `Layer 1:` no media access control (no method of controlling which devices can trasmit)  
-* likelihood of collisions increases, the more layer 1 devices present on the same layer 1 network  
-* not able to detect when collisions occur (network cards just transmitting via voltage changes on the shared medium)  
-  * not digital: it's an analog signal which can transmit binary data  
-* theoretically, network cards can all transmit at the same time  
-
+* hubs have 1 job: retransmit anything it receives on any of its ports to all of the other ports (including any errors & collisions)
+* NOTE: layer 1 is a broadcast medium: no individual device addresses (ie 1 laptop cannot address traffic directly at another)
+* collision: corrupts any transmissions on the shared medium (only 1 device can transmit at a time & be readable to everything else)
+* `Layer 1:` no media access control (no method of controlling which devices can trasmit)
+* likelihood of collisions increases, the more layer 1 devices present on the same layer 1 network
+* not able to detect when collisions occur (network cards just transmitting via voltage changes on the shared medium)
+  * not digital: it's an analog signal which can transmit binary data
+* theoretically, network cards can all transmit at the same time
 * `Takeaways (how devices ACTUALLY communicate at a physical level)`
 * layer 1 doesn't have any capability beyond the specifications it defines 
   * all devices will use specifications in order to transmit onto the shared medium, & receive from the shared medium
