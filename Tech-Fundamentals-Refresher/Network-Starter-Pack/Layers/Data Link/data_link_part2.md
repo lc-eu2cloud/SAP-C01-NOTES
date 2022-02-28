@@ -3,12 +3,12 @@
 #### Continuation from Part 1: 2 devices running a game; left & right laptop connected using a network cable (shared physical medium)
 **Review**
 * Layer 2 uses Layer 1 & needs it in place & working for Layer 2 network to be active
-* now both laptops' networking stack (networking software layers) have working Layer 1 & Layer 2 network
+* now both laptops' networking stacks (networking software layers) have working Layer 1 & Layer 2 network
 * Game communication: uses Layer 2 network (each device now has MAC address: hardware address for each network interface card)
 
-**Transmitting Data: game on left laptop wants to send something to game on right laptop**
-* Starting point: left laptops's Layer 2 software creates Ethernet frame (F1); left laptop knows MAC address of right laptop
-* right laptop's MAC address (ending in 5b:76) is in F1's destination MAC address field
+**Transmitting Data: game on left laptop wants to send game data to game on right laptop**
+* Starting point: left laptops's Layer 2 software creates Ethernet Frame (F1); left laptop knows MAC address of right laptop
+* right laptop's MAC address (ending in 5b:76, see diagram below) is in F1's destination MAC address field
 * F1's payload contains the data to send to game on right laptop
 
 **CSMA (Carrier Sense, Multiple Access)**
@@ -23,8 +23,20 @@
 * shows how game communication can work using Layer 2: 
   1. using Layer 1 to transmit & receive raw data
   2. adding MAC addressing on top of Layer 1: allowing for device-to-device communication & adding media access control
-* Ethernet frame can be transmitted onto shared physical medium by layer 1 
-* layer 1 handles conversion to voltages,light,or RF -> sent across the medium, received by other devices connected to shared medium
+* Example: Right laptop utilizing media access control (continuation of scenario)
+  1. Right laptop's layer 2 software creates Ethernet Frame (F2) to send data to game on left laptop
+  2. Right laptop attempts to transmit at same time left laptop is transmitting
+  3. Right laptop's layer 2 software works with layer 1 to check for a carrier signal on the shared physical medium
+  4. Carrier signal detected (left laptop is transmitting); right laptop's layer 2 software waits until carrier signal no longer detected
+  5. Layer 2 passes F2 to Layer 1 once carrier signal is not detected, Layer 1 sees F2 as a block of data to transmit
+  6. Left laptop's layer 1 software receives raw bitstream transmitted onto the medium by right laptop & passes it to layer 2
+  7. Layer 2 software analyzes F2's destination MAC address field & sees left laptop's MAC address ("I'm the destination!")
+  8. Layer 2 can now pass the data contained in F2's payload to the game
+* NOTE: Without layer 2, layer 1 would simply transmit any data it receives onto the shared physical medium & cause a collision
+  * With layer 2, layer 1 is only instructed to transmit the frame once a carrier isn't detected
+* Before either laptop sends game data, the game data is encapsulated inside a frame's payload
+* Before giving intended data back to the game at either laptop, it's de-encapsulated (frame's payload is extracted)
+* 
 * layer 1 doesn't understand the frame itself (simply transmits raw data onto the physical medium)
 
 **Parts of a Frame** 
