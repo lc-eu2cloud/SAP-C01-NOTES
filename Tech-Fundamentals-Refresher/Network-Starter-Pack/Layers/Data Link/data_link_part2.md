@@ -7,7 +7,7 @@
 * Game communication: uses Layer 2 network (each device now has MAC address: hardware address for each network interface card)
 
 **Transmitting Data: game on left laptop wants to send game data to game on right laptop**
-* Starting point: left laptops's Layer 2 software creates Ethernet Frame (F1); left laptop knows MAC address of right laptop
+* Starting point: left laptop's Layer 2 software creates Ethernet Frame (F1) & knows MAC address of right laptop
 * right laptop's MAC address (ending in 5b:76, see diagram below) is in F1's destination MAC address field
 * F1's payload contains the data to send to game on right laptop
 
