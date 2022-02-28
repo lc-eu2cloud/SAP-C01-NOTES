@@ -3,14 +3,14 @@
 ### Layer 2 - Data Link - Ethernet Frame
 **Layer 2 Fundamentals**
 * Layer 2 network requires a working layer 1 network to operate 
-* can run on different types of layer 1 networks (cable,fiber,wifi) & provide the same Layer 2 capabilities
+* can run on different types of layer 1 networks (copper,fiber,wifi) & provide the same Layer 2 capabilities
 * Frame: format for sending information over a layer 2 network
 * MAC address: unique hardware address for every device on a network, formed of two parts:
   1. **organizationally unique identifier** (OUI; assigned to network device manufacturers, each with separate OUI)
   2. **network interface controller** (NIC)
   * together, intended to create a globally unique MAC address on a network card
  ![Layer 2: MAC Address](https://i.postimg.cc/hPJfQX20/image8.png)
-* Ethernet frame can be transmitted onto shared physical medium by layer 1 
+* Ethernet frame can be transmitted onto shared physical medium using layer 1 
 * layer 1 handles conversion to voltages,light,or RF -> sent across the medium, received by other devices connected to shared medium
 * layer 1 doesn't understand the frame itself (simply transmits raw data onto the physical medium)
 
@@ -44,5 +44,5 @@
 **Scenario: 2 devices running a game; left & right laptop connected using a network cable (shared physical medium)**
 * Layer 1 software running on a network card simply transmits any data it receives onto the physical medium (no media access control)
 * Layer 2 provides controlled access to the physical medium (solves problem of both laptops sending data at the same time)
-  * NOTE: electrical signals overlapping & interfering with each other result in a collision, corrupting both pieces of data
+* NOTE: electrical signals overlapping & interfering with each other result in a collision, corrupting both pieces of data
 ![Layer 2: Game Example - Collision](https://i.postimg.cc/cLCKkmNF/image10.png)
