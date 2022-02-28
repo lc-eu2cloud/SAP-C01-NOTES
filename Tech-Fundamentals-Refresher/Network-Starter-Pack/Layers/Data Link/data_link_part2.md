@@ -1,29 +1,28 @@
 ## Network Starter Pack - 2 - Data Link - Part 2 ##
-
 ### Layer 2 - Data Link - CSMA/CD
-**Continuation from Part 1:** 2 devices running a game; left & right laptop connected using a network cable (shared physical medium)
-
-Review
+#### Continuation from Part 1: 2 devices running a game; left & right laptop connected using a network cable (shared physical medium)
+**Review**
 * Layer 2 uses Layer 1 & needs it in place & working for Layer 2 network to be active
-* left & right laptop's networking stack (networking software layers) now both have working Layer 1 & Layer 2 network
+* now both laptops' networking stack (networking software layers) have working Layer 1 & Layer 2 network
 * Game communication: uses Layer 2 network (each device now has MAC address: hardware address for each network interface card)
 
-Transmitting Data: game on left laptop wants to send something to game on right laptop
-* Starting point: game communication via Layer 2 software creating Ethernet frame (F1); left laptop knows MAC address of right laptop
+**Transmitting Data: game on left laptop wants to send something to game on right laptop**
+* Starting point: left laptops's Layer 2 software creates Ethernet frame (F1); left laptop knows MAC address of right laptop
 * right laptop's MAC address (ending in 5b:76) is in F1's destination MAC address field
 * F1's payload contains the data to send to game on right laptop
 
-CSMA (Carrier Sense, Multiple Access)
+**CSMA (Carrier Sense, Multiple Access)**
 * function: sense a carrier signal (seen on layer 1 network when any other network device is transmitting at that point in time)
-* how it works: Layer 2's part of left laptop's networking stack communicates with Layer 1 part (looks for any signs of carrier signal)
-  * Layer 2 passes F1 to Layer 1 when it doesn't sense a carrier; Layer 1 simply sees F1 as a block of data to transmit
-  * On right side, layer 1 software receives raw bitstream transmitted onto shared medium by left side & passes it to Layer 2
-  * Layer 2 analyzes F1's destination MAC address & sees right laptop's MAC address ("I'm the destination!")
-  * Layer 2 can now pass the data contained in F1's payload to the game
-* how game communication can work using Layer 2: 
-  * uses Layer 1 to transmit & receive raw data
-  * adds MAC addresses on top of Layer 1: allowing for device-to-device communication & adding media access control
+* how it works: starting from left laptop's networking stack with Ethernet Frame (F1)
+  1. Layer 2 is communicating with Layer 1; Layer 2 is looking for any signs of carrier signal on the Layer 1 network
+  2. Layer 2 passes F1 to Layer 1 when it doesn't sense a carrier; Layer 1 simply sees F1 as a block of data to transmit
+  3. Right laptop's layer 1 software receives raw bitstream transmitted onto the medium by left laptop & passes it to Layer 2
+  4. Layer 2 software analyzes F1's destination MAC address field & sees right laptop's MAC address ("I'm the destination!")
+  5. Layer 2 can now pass the data contained in F1's payload to the game
  ![Layer 2: Game Example - CSMA](https://i.postimg.cc/HsvwMktW/image12.png)
+* shows how game communication can work using Layer 2: 
+  1. uses Layer 1 to transmit & receive raw data
+  2. adds MAC addressing on top of Layer 1: allowing for device-to-device communication & adding media access control
 * Ethernet frame can be transmitted onto shared physical medium by layer 1 
 * layer 1 handles conversion to voltages,light,or RF -> sent across the medium, received by other devices connected to shared medium
 * layer 1 doesn't understand the frame itself (simply transmits raw data onto the physical medium)
