@@ -40,15 +40,15 @@
 
 **Abstraction** 
 * OSI 7-Layer Model abstraction: anything _using_ layer X services has no visibility to anything below layer X (layers are independent)
-  * anything using layer 1 services just has visibility to layer 1 (there is no layer below it 😉)
+  * anything using layer 1 services just has visibility to layer 1 communication & there is no layer below it 😉
 * Game communication between both laptops appears as layer 2 communication (physical communication at layer 1 is abstracted away)
 ![Layer 2: Game Example - CD (both laptops)](https://i.postimg.cc/HxQyJFG7/image15.png)
 
 **CD (Collision Detection)**
 * function: detect multiple devices transmitting at same time & reduce likelihood of it happening again on same layer 2 network
 * how it works: starting from both laptops checking & not detecting a carrier signal
-  1. Both laptops' layer 2 software instructs layer 1 to transmit (simultaenous transmission, causing a collision)
-  2. A jam signal is sent by all of the devices which detect it & a random backoff occurs for each device
+  1. Both laptops' layer 2 software instructs layer 1 to transmit (simultaenous transmission causing a collision)
+  2. A jam signal is sent by all of the devices which detect it & a random backoff period occurs for each device
   3. Backoff period: time duration a device will not attempt to transmit; transmission retried after backoff period expires
   4. Random backoff goal: only one device will attempt to transmit, all network devices will see the carrier signal & wait to transmit
   * if collision still occurs, another backoff period occurs with a longer duration, reducing likelihood of another collision
