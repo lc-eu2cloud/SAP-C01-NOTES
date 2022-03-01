@@ -55,21 +55,18 @@
 * shows how layer 2 provides collision detection & collision avoidance (jam signal + random backoff period)
 
 #### Layer 2 using a Hub
-**Scenario: 4 devices connected to same 4-port hub** (top,bottom,left,right)
+**Hub Review**
 
-Hub review
-* Layer 1 device that only sees physical data, doesnt't understand frames, but instead a multiport repeater
+Scenario: 4 devices connected to same 4-port hub (top,bottom,left,right)
+* Hub: Layer 1 device that only sees physical data, doesnt't understand frames, but instead a multiport repeater
 * If top laptop sends frame destined for bottom laptop, hub only sees frame as raw data & repeats it to all the other ports
-* other laptops will receive raw data, its Layer 2 software interprets the frame, determines its not intended destination, then discards it 
-* bottom laptop's layer 2 software will see it's the intended destination & pass on the game data to the game
+* left & right laptops receive the raw data, Layer 2 software analyzes the frame, sees it's not intended destination, & discards the frame 
+* bottom laptop's layer 2 software sees it's the intended destination & passes on the game data to the game
 ![Layer 2: Game Example - Issues using a Hub](https://i.postimg.cc/cC1sPhcL/image16.png) 
 
 Issues using a Hub  
 * collisions will still occur even though a hub doesn't prevent a layer 2 network running on top of it & providing layer 2 capabilities
 * hubs only understand layer 1, cannot take advantage of CSMA/CD & collision avoidance capabilities to prevent collisions
 * solved by a networking device called a switch (layer 2 device: understands & contains functionality for layer 2 & layer 1)
-* Layer 1 software running on a network card simply transmits any data it receives onto the physical medium (no media access control)
-* Layer 2 provides controlled access to the physical medium (solves problem of both laptops sending data at the same time)
-  * NOTE: electrical signals overlapping & interfering with each other result in a collision, corrupting both pieces of data
 ![Layer 2: Game Example - Collision](https://i.postimg.cc/cLCKkmNF/image10.png)
 
