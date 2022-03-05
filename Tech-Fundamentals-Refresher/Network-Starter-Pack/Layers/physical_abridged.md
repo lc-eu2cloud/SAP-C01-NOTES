@@ -38,7 +38,7 @@
 * layer 1 networks tend not to scale very well (the more devices added to a layer 1 network, the higher the chance of collisions & data corruption)
 * layer 1 is fundamental to networking & needs layer 2 (runs over the top of a working layer 1 connection), in order to be useful  
 #### Layer 1 - Physical - Lesson Summary ####  
-Only layer 1 networking, not interacting with the other layers  
+`NOTE: Only layer 1 networking, not interacting with the other layers`
 * focuses on the physical shared medium (the standards for transmitting onto the medium, & the standards for receiving from the shared medium)  
 * all devices in same layer 1 network need to use the same layer 1 medium & device standards 
   * generally: a certain type of network card & cable, OR wifi cards using certain types of antennas & frequency ranges
