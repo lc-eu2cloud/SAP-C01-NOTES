@@ -26,7 +26,7 @@
 * hubs have 1 job: retransmit anything it receives on any of its ports to all of the other ports (including any errors & collisions)
 * NOTE: layer 1 is a broadcast medium: no individual device addresses (ie 1 laptop cannot address traffic directly at another)
 * collision: corrupts any transmissions on the shared medium (only 1 device can transmit at a time & be readable to everything else)
-* `Layer 1:` no media access control (no method of controlling which devices can trasmit)
+`Layer 1:` no media access control (no method of controlling which devices can trasmit)
 * likelihood of collisions increases, the more layer 1 devices present on the same layer 1 network
 * not able to detect when collisions occur (network cards just transmitting via voltage changes on the shared medium)
   * not digital: it's an analog signal which can transmit binary data
@@ -39,10 +39,10 @@
 * layer 1 is fundamental to networking & needs layer 2 (runs over the top of a working layer 1 connection), in order to be useful  
 #### Layer 1 - Physical - Lesson Summary ####  
 `NOTE: Only layer 1 networking, not interacting with the other layers`
-* focuses on the physical shared medium (the standards for transmitting onto the medium, & the standards for receiving from the shared medium)  
-* all devices in same layer 1 network need to use the same layer 1 medium & device standards 
+* focuses on the physical shared medium (the standards for transmitting onto the medium, & the standards for receiving from the shared medium)
+* all devices in same layer 1 network need to use the same layer 1 medium & device standards
   * generally: a certain type of network card & cable, OR wifi cards using certain types of antennas & frequency ranges
-* doesn't provide any form of access control on the shared medium 
+* doesn't provide any form of access control on the shared medium
 * doesn't provide any uniquely identifiable devices (no method for device-to-device communication)
     
 
