@@ -58,15 +58,15 @@
 **Hub Review**
 
 Scenario: 4 devices connected to same 4-port hub (top,bottom,left,right)
-* Hub: Layer 1 device that only sees physical data, doesnt't understand frames, but instead a multiport repeater
-* If top laptop sends frame destined for bottom laptop, hub only sees frame as raw data & repeats it to all the other ports
+* Hub: Layer 1 device that only sees physical data, doesnt't understand frames, instead a multiport repeater
+* If top laptop sends frame **_destined_** for bottom laptop, hub only sees frame as raw data & repeats it to all the other ports
 * left & right laptops receive the raw data, Layer 2 software analyzes the frame, sees it's not intended destination, & discards the frame 
 * bottom laptop's layer 2 software sees it's the intended destination & passes on the game data to the game
 ![Layer 2: Game Example - Issues using a Hub](https://i.postimg.cc/cC1sPhcL/image16.png) 
 
 Issues using a Hub  
 * collisions will still occur even though a hub doesn't prevent a layer 2 network running on top of it & providing layer 2 capabilities
-* hubs only understand layer 1, cannot take advantage of CSMA/CD & collision avoidance capabilities to prevent collisions
+* hubs only understand layer 1, cannot take advantage of CSMA/CD & collision avoidance capabilities to avoid collisions
 * solved by a networking device called a switch (layer 2 device: understands & contains functionality for layer 2 & layer 1)
 ![Layer 2: Game Example - Collision](https://i.postimg.cc/cLCKkmNF/image10.png)
 
