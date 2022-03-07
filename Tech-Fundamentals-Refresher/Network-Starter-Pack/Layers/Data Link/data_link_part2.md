@@ -72,6 +72,9 @@ Issues using a Hub
 #### Layer 2 using a Switch
 Continuation of Game Scenario: same 4 devices now connected to same 4-port switch
 * Each laptop has its own MAC address
-* Switch (layer 2 device) 
+* Switch: (layer 2 device) has its own MAC address table & learns what's connected to each port over time
+  * can interpret the frames it sees & see the source & destination MAC addresses
+  * will populate its MAC address table with each network device's MAC address & port it's connected to
+  * generally: happens first time each laptop sends a frame & the switch receives it
 ![Layer 2: Game Example - Collision](https://i.postimg.cc/cLCKkmNF/image10.png)
 
