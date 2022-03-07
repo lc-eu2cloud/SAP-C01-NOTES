@@ -32,7 +32,7 @@
   * not able to detect when collisions occur (network cards just transmitting via voltage changes on the shared medium)
     * not digital signal: instead an analog signal which can transmit binary data
 
-`Layer 1 Takeaways from Scenario: how devices ACTUALLY communicate at a physical level`
+`Layer 1 Scenario Takeaways: how devices ACTUALLY communicate at a physical level`
 * doesn't have any capability beyond the specifications it defines 
   * all devices will use specifications in order to transmit onto & receive from the shared medium
 * network has 1 broadcast domain & 1 collision domain (ie hub retransmits everything, including collisions)
