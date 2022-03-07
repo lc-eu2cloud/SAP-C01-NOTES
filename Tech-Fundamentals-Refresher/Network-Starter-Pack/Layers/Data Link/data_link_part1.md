@@ -21,7 +21,7 @@
   2. MAC address in source MAC address field is device MAC address of the device transmitting the frame
   3. inserting all F's into destination MAC address field sends a frame to all devices on local network (broadcast)
   4. inserting a device's MAC address into source MAC address field allows the device to receive replies 
-* (3) EtherType (ET): specfies which Layer 3 protocol is putting its data inside a frame (might be IP/Internet Protocol)
+* (3) EtherType (ET): specfies which Layer 3 protocol is putting its data inside a frame (might be IP aka Internet Protocol)
   * Layer 3 uses Layer 2 frames for device-to-device communication on a local network
   * why a device receiving a frame at destination side needs to know which Layer 3 protocol originally put its data inside that frame
 * together, destination & source MAC address, & EtherType fields commonly known as MAC header
@@ -32,7 +32,7 @@
 * encapsulation: allows devices to put information inside something to be analyzed & extracted at other side of communication
 * example: IP packet encapsulation (Layer 3 -> Layer 2)
   1. Layer 3 generates an IP packet, puts it inside an Ethernet frame, & the frame delivers this data to a Layer 2 destination
-  2. at destination side, frame is analyzed, Layer 3 IP packet is extracted & given back to Layer 3 (decapsulation)
+  2. at destination side, frame is analyzed, Layer 3 IP packet is extracted & given back to Layer 3 (de-encapsulation)
   3. EtherType field determines which Layer 3 protocol receives this Layer 3 IP packet at destination side
 * (5) Frame Check Sequence (FCS): identifies any errors in the frame via a simple CRC check (destination side checks for corruption)  
 
