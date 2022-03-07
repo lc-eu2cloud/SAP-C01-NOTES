@@ -68,5 +68,10 @@ Issues using a Hub
 * collisions will still occur even though a hub doesn't prevent a layer 2 network running on top of it & providing layer 2 capabilities
 * hubs only understand layer 1, cannot take advantage of CSMA/CD & collision avoidance capabilities to avoid collisions
 * solved by a networking device called a switch (layer 2 device: understands & contains functionality for layer 2 & layer 1)
+
+#### Layer 2 using a Switch
+Continuation of Game Scenario: same 4 devices now connected to same 4-port switch
+* Each laptop has its own MAC address
+* Switch (layer 2 device) 
 ![Layer 2: Game Example - Collision](https://i.postimg.cc/cLCKkmNF/image10.png)
 
