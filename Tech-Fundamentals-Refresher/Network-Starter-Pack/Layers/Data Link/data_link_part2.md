@@ -75,6 +75,21 @@ Continuation of Game Scenario: same 4 devices now connected to same 4-port switc
 * Switch: (layer 2 device) has its own MAC address table & learns what's connected to each port over time
   * can interpret the frames it sees & see the source & destination MAC addresses
   * will populate its MAC address table with each network device's MAC address & port it's connected to
+    * results from switch seeing the source MAC address on the frame 
   * generally: happens first time each laptop sends a frame & the switch receives it
-![Layer 2: Game Example - Collision](https://i.postimg.cc/cLCKkmNF/image10.png)
+* With MAC address table populated, top laptop sends a frame (F1) intended for left laptop
+* 2 possibilities arise when the switch sees F1 arrive at the port the top laptop is connected to
+  1. forwards F1 to all of the other ports (doesn't know which port the destination MAC address is attached to)
+  2. forwards F1 to a specific port (knows the port the destination MAC address is attached to)
+
+`Layer 2 Using a Switch: Game Scenario Takeaways`
+* Switches store & forward frames (receive, store, & forward based on MAC address table, then discard the frame)
+* NOTE: Switches don't forward collisions (each switch port is a separate collision domain), only valid frames
+  * collisions (simultaneous transmission) can only occur between the device & the port it's connected
+![Layer 2: Game Example - Using a Switch](https://i.postimg.cc/J0qwbDKD/image17.png)
+* layer 2 is foundation for all networks used daily (wifi, wired, & the internet)
+* internet: fundamentally a large collection of interconnected layer 2 networks
+
+### Layer 2 - Data Link - Lesson Summary
+
 
