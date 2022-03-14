@@ -58,7 +58,7 @@
 **Hub Review**
 
 Scenario: 4 devices connected to same 4-port hub (top,bottom,left,right)
-* Hub: Layer 1 device that only sees physical data, doesnt't understand frames, instead a multiport repeater
+* Hub: Layer 1 device, only sees physical data, doesnt't understand frames, instead a multiport repeater
 * If top laptop sends frame **_destined_** for bottom laptop, hub only sees frame as raw data & repeats it to all the other ports
 * left & right laptops receive the raw data, Layer 2 software analyzes the frame, sees it's not intended destination, & discards the frame 
 * bottom laptop's layer 2 software sees it's the intended destination & passes on the game data to the game
@@ -70,25 +70,25 @@ Issues using a Hub
 * solved by a networking device called a switch (layer 2 device: understands & contains functionality for layer 2 & layer 1)
 
 #### Layer 2 using a Switch
-Continuation of Game Scenario: same 4 devices now connected to same 4-port switch
-* Each laptop has its own MAC address
-* Switch Capabilties: 
-  * layer 2 device: has its own MAC address table & learns what's connected to each port over time
-  * can interpret the frames it sees & see the source & destination MAC addresses
-  * will populate its MAC address table with each network device's MAC address & port it's connected to
-    * results from switch seeing the source MAC address on the frame 
-  * generally: happens first time each laptop sends a frame & the switch receives it
+Continuation of Game Scenario: same 4 devices now connected to same 4-port switch (each device has its own MAC address)
+* Switch: Layer 2 device, has its own MAC address table & learns what's connected to each port over time
+* `MAC address table population (switch capability #1)`
+* can interpret the frames it receives & sees the source & destination MAC addresses
+* populates its MAC address table with each network device's MAC address & port it's connected to
+  * results from switch seeing the source MAC address on the frame 
+* generally: happens first time each laptop sends a frame & the switch receives it
+* `Store & forward frames (switch capability #2)`
 * With MAC address table populated, top laptop sends a frame (F1) intended for left laptop
-* 2 possibilities arise when the switch sees F1 arrive at the port the top laptop is connected to
+* switch sees F1 arrive at the port the top laptop is connected to (2 possibilities)
   1. forwards F1 to all of the other ports (doesn't know which port the destination MAC address is attached to)
-  2. forwards F1 to a specific port (knows the port the destination MAC address is attached to)
+  2. forwards F1 to a specific port (knows the port the destination MAC address is attached to, eth3)
+![Layer 2: Game Example - Using a Switch](https://i.postimg.cc/J0qwbDKD/image17.png)
 
 `Layer 2 Using a Switch: Game Scenario Takeaways`
 * Switches store & forward frames (receive, store, & forward based on MAC address table, then discard the frame)
-* NOTE: Switches don't forward collisions (each switch port is a separate collision domain), only valid frames
+* NOTE: Switches don't forward collisions, only valid frames (each switch port is a separate collision domain)
   * collisions (simultaneous transmission) can only occur between the device & the port it's connected
-![Layer 2: Game Example - Using a Switch](https://i.postimg.cc/J0qwbDKD/image17.png)
-* layer 2 is foundation for all networks used daily (wifi, wired, & the internet)
+* layer 2 is foundation for all networks (wifi, wired, & the internet) used daily
 * internet: fundamentally a large collection of interconnected layer 2 networks
 
 ### Layer 2 - Data Link - Lesson Summary
