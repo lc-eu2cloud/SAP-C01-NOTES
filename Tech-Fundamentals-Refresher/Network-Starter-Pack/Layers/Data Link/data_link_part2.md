@@ -92,5 +92,11 @@ Continuation of Game Scenario: same 4 devices now connected to same 4-port switc
 * internet: fundamentally a large collection of interconnected layer 2 networks
 
 ### Layer 2 - Data Link - Lesson Summary
+#### Benefits of adding Layer 2
+* uniquely address frames to a particular device on a local network (MAC Addressing)
+* devices can share access to a physical medium, avoiding crosstalk & collisions (media access control)
+* detect collisions & have capability to correct or workaround them (collision detection)
+* all of the above allows for 1:1 communication (Unicast) & 1:ALL communication (Broadcast)
+* provides capability to scale & mostly avoid collisions via switches (store & only forward valid frames)
 
 
