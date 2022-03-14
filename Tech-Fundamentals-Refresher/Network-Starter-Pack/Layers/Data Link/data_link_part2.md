@@ -79,9 +79,9 @@ Continuation of Game Scenario: same 4 devices now connected to same 4-port switc
 * generally: happens first time each laptop sends a frame & the switch receives it
 * `Store & forward frames (switch capability #2)`
 * With MAC address table populated, top laptop sends a frame (F1) intended for left laptop
-* switch sees F1 arrive at the port the top laptop is connected to (2 possibilities)
+* switch receives at the port the top laptop is connected to (2 possibilities)
   1. forwards F1 to all of the other ports (doesn't know which port the destination MAC address is attached to)
-  2. forwards F1 to a specific port (knows the port the destination MAC address is attached to, eth3)
+  2. forwards F1 to a specific port (knows the port the destination MAC address ending in 5b:78 is attached to, eth3)
 ![Layer 2: Game Example - Using a Switch](https://i.postimg.cc/J0qwbDKD/image17.png)
 
 `Layer 2 Using a Switch: Game Scenario Takeaways`
