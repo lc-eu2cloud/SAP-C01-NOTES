@@ -72,14 +72,14 @@ Issues using a Hub
 #### Layer 2 using a Switch
 Continuation of Game Scenario: same 4 devices now connected to same 4-port switch (each device has its own MAC address)
 * Switch: Layer 2 device, has its own MAC address table & learns what's connected to each port over time
-* `MAC address table population (switch capability #1)`
+* `populate MAC address table (switch capability #1)`
 * can interpret the frames it receives & sees the source & destination MAC addresses
 * populates its MAC address table with each network device's MAC address & port it's connected to
   * results from switch seeing the source MAC address on the frame 
 * generally: happens first time each laptop sends a frame & the switch receives it
 * `Store & forward frames (switch capability #2)`
 * With MAC address table populated, top laptop sends a frame (F1) intended for left laptop
-* switch receives at the port the top laptop is connected to (2 possibilities)
+* switch receives F1 at the port the top laptop is connected to (2 possibilities)
   1. forwards F1 to all of the other ports (doesn't know which port the destination MAC address is attached to)
   2. forwards F1 to a specific port (knows the port the destination MAC address ending in 5b:78 is attached to, eth3)
 ![Layer 2: Game Example - Using a Switch](https://i.postimg.cc/J0qwbDKD/image17.png)
@@ -87,7 +87,7 @@ Continuation of Game Scenario: same 4 devices now connected to same 4-port switc
 `Layer 2 Using a Switch: Game Scenario Takeaways`
 * Switches store & forward frames (receive, store, & forward based on MAC address table, then discard the frame)
 * NOTE: Switches don't forward collisions, only valid frames (each switch port is a separate collision domain)
-  * collisions (simultaneous transmission) can only occur between the device & the port it's connected
+  * collisions (simultaneous transmission) can only occur between the device & the port it's connected to
 * layer 2 is foundation for all networks (wifi, wired, & the internet) used daily
 * internet: fundamentally a large collection of interconnected layer 2 networks
 
