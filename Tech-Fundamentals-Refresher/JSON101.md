@@ -1,13 +1,12 @@
 ## JSON101 - JavaScript Object Notation ##
 
 #### JSON Introduction ####
-JSON:
+JSON:  
 * a lightweight data-interchange format: easy for humans to read & write; easy for machines to parse & generate 
 * a JSON Object: an unordered set/list of key:value pairs enclosed in {&} (the equivalent of a dictionary in YAML)
 * a JSON array: an ordered collection of values, comma separated & enclosed in [&] (the equivalent of a list in YAML)
 * JSON supports representing values as string, object, number, array, true, false, null
-* within AWS, JSON can be used within CloudFormation & for identity & resource policy documents 
-
+* within AWS, JSON can be used within CloudFormation & for identity & resource policy documents
 * #### Objects & Lists ####
   * every JSON document starts with a top-level JSON object (an unordered list of key:value pairs surrounded by {})
   * in this example, a top-level JSON object with 3 key:value pairs where each key ("cats","colors","numofeyes") has a corresponding value where the value is an array
