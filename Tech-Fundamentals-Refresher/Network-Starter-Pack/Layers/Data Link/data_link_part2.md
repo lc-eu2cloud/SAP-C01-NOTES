@@ -18,7 +18,7 @@
   2. Layer 2 passes F1 to Layer 1 when it doesn't sense a carrier; Layer 1 simply sees F1 as a block of data to transmit
   3. Right laptop's layer 1 software receives raw bitstream transmitted onto the medium by left laptop & passes it to Layer 2
   4. Layer 2 software analyzes F1's destination MAC address field & sees right laptop's MAC address ("I'm the destination!")
-  5. Layer 2 can now pass the data contained in F1's payload to the game
+  5. Layer 2 can now pass the game data contained in F1's payload to the game
  ![Layer 2: Game Example - CSMA (left laptop)](https://i.postimg.cc/HsvwMktW/image12.png)
 * shows how game communication can work using Layer 2: 
   1. using Layer 1 to transmit & receive raw data
