@@ -19,7 +19,7 @@
   7. 1 < 2 (column 7's binary position value), column 7's binary value is 0, move to next column
   8. 1 = 1 (column 8's binary position value), minus 1 from 1, 0 is new decimal value, column 8's binary value is 1, process is finished
 * shows how decimal value 133 (one part of the IPv4 address) converted to binary number (10000101)
-![End of Decimal to Binary Conversion Example](https://i.postimg.cc/hPvhG4By/image19.png)
+![End of Dotted Decimal to Binary Conversion Example](https://i.postimg.cc/hPvhG4By/image19.png)
 
 **Binary IPv4 Address => Decimal IPv4 Address**
 * Conversion: from left to right with each octet between the periods
@@ -32,34 +32,4 @@
   3. sum the values in equation together (128+0+0+0+0+4+0+1) to obtain the result (133)
 * shows how 1st octet (10000101) converted to decimal value 133 (1st part of the IPv4 address)
 * repeat process to convert remaining octets (shown above) to decimal values (33,33,7) & get dotted decimal IPv4 address (133.33.33.7)
-#### Section
-**Subsection**
-* xx
-* xx
-* xx
-**Subsection**
-* xx
-* xx
-* xx
-**Subsection**
-* xx
-* xx
-* xx
-#### Section
-**Subsection**
-* xx
-* xx
-* xx
-**Subsection**
-* xx
-* xx
-* xx
-**Subsection**
-* xx
-* xx
-* xx
-#### Lesson Summary Section
-**Subsection**
-* xx
-* xx
-* xx
+![End of Binary to Dotted Decimal Conversion Example!](https://i.postimg.cc/fbvtthcq/image21.png)
