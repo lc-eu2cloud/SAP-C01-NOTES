@@ -32,4 +32,4 @@
   3. sum the values in equation together (128+0+0+0+0+4+0+1) to obtain the result (133)
 * shows how 1st octet (10000101) converted to decimal value 133 (1st part of the IPv4 address)
 * repeat process to convert remaining octets (shown above) to decimal values (33,33,7) & get dotted decimal IPv4 address (133.33.33.7)
-![End of Binary to Dotted Decimal Conversion Example!](https://i.postimg.cc/fbvtthcq/image21.png)
+![End of Binary to Dotted Decimal Conversion Example](https://i.postimg.cc/fbvtthcq/image21.png)
