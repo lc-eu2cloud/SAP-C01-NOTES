@@ -14,7 +14,7 @@
 ![Layer 3 Networking Example: End](https://i.postimg.cc/HxhndGv9/image23.png)
 
 #### Layer 3 - IP - Packet Structure
-**IP Versions - v4 **
+**IP Versions - v4** 
 * source & destination IP address field (source: device IP, generates the packet; destination: packet's intended destination) 
 * protocol field: generally contains data provided by Layer 4 protocol
   *  
