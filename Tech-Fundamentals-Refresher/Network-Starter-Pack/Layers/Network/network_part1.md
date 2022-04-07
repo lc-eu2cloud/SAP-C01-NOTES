@@ -13,16 +13,19 @@
 * shows why Layer 3 protocols (ie IP) needed
 ![Layer 3 Networking Example: End](https://i.postimg.cc/HxhndGv9/image23.png)
 
-**Subsection**
+#### Layer 3 - IP - Packet Structure
+**IP Versions - v4 **
+* source & destination IP address field (source: device IP, generates the packet; destination: packet's intended destination) 
+* protocol field: generally contains data provided by Layer 4 protocol
+  *  
 * xx
 * xx
 * xx
-**Subsection**
+**IP Versions - v6**
 * xx
 * xx
 * xx
 #### Section
-**Subsection**
 * xx
 * xx
 * xx
