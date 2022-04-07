@@ -4,7 +4,7 @@
 **Scenario: 2 Layer 2 Local Area Networks (LANs) with geographic separation (LAN1 & LAN2 isolated from each other)**
 ![Layer 3 Networking Example: Beginning](https://i.postimg.cc/v82n0f0V/image22.png)
 * each LAN only uses Layer 2, joined by direct point-to-point link, & use _same_ Layer 2 protocol to communicate locally
-* PPP/MPLS/ATM: layer 2 protocols, allow for long distance point-to-point links (Ethernet: Layer 2 protocol generally used locally)
+* PPP/MPLS/ATM: layer 2 protocols, suitable for long distance point-to-point links (Ethernet: Layer 2 protocol generally used locally)
 * Layer 3 capabilities: can be added onto 1 or more Layer 2 networks (example Layer 3 protocol - Internet Protocol aka IP)
   1. allows for cross-network IP addressing & routing to move data between LANs without direct point-to-point links
   2. Routers (Layer 3 devices): move IP packets from source to destination via many intermediate networks across the internet
