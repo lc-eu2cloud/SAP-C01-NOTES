@@ -16,8 +16,9 @@
 #### Layer 3 - IP - Packet Structure
 **IP Versions - v4** 
 * source & destination IP address field (source: device IP, generates the packet; destination: packet's intended destination) 
-* protocol field: generally contains data provided by Layer 4 protocol
-  *  
+* protocol field: generally contains data provided by Layer 4 protocol (ie ICMP, TCP, UDP)
+  * Layer 4 protocol data inside a packet (ICMP:1,TCP:6,UDP:17)
+  * means a destination's network stack's Layer 3 component will know which Layer 4 protocol to pass the intended data
 * xx
 * xx
 * xx
