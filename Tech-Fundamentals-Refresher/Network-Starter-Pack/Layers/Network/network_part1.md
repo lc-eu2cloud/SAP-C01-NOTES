@@ -19,40 +19,10 @@
 * protocol field: generally contains data provided by Layer 4 protocol (ie ICMP, TCP, UDP)
   * Layer 4 protocol data inside a packet (ICMP:1,TCP:6,UDP:17)
   * means a destination's network stack's Layer 3 component will know which Layer 4 protocol to pass the intended data
-* xx
-* xx
-* xx
+* Time to Live (TTL) field: defines # of hops a packet can move through (max # of hops if packet can't reach destination)
+
 **IP Versions - v6**
-* xx
-* xx
-* xx
-#### Section
-* xx
-* xx
-* xx
-**Subsection**
-* xx
-* xx
-* xx
-**Subsection**
-* xx
-* xx
-* xx
-#### Section
-**Subsection**
-* xx
-* xx
-* xx
-**Subsection**
-* xx
-* xx
-* xx
-**Subsection**
-* xx
-* xx
-* xx
-#### Lesson Summary Section
-**Subsection**
-* xx
-* xx
-* xx
+* source & destination IP address field: similar to version 4 but larger (more possible IPv6 addresses)
+* protocol field: same as version 4 (data generally provided by Layer 4 protocol)
+* hop limit field: similar to TTL field in version 4 IP packet (max. # of hops a packet can cross before it's discarded)
+![Layer 3 IP Packet Structure Example](https://i.postimg.cc/wxszDyx7/image24.png)
