@@ -24,5 +24,5 @@
 **IP Versions - v6**
 * source & destination IP address field: similar to version 4 but larger (more possible IPv6 addresses)
 * protocol field: same as version 4 (data generally provided by Layer 4 protocol)
-* hop limit field: similar to TTL field in version 4 IP packet (max. # of hops a packet can cross before it's discarded)
+* hop limit field: similar to TTL field in version 4 IP packet (max # of hops a packet can cross before it's discarded)
 ![Layer 3 IP Packet Structure Example](https://i.postimg.cc/wxszDyx7/image24.png)
