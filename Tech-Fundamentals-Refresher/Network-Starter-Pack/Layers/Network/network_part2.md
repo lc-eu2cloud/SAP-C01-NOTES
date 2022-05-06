@@ -16,7 +16,16 @@
 * Static: IP addresses assigned by humans 
 * Dynamic: IP addresses assigned by network servers running DHCP server software (Dynamic Host Configuration Protocol)
 * IP addresses need to be unique (globally & especially on a local network) or bad things happen
-#### Section
+
+**Subnet Mask**
+* configured on L3 interfaces along with IP addresses (ie 1.2.3.4 255.255.255.255)
+* default gateway: IP address on local network; packets forwarded to this IP address when intended destination not a local IP address
+* subnet masks allow IP devices/hosts to know if communication with another IP device is on same network or not
+  1. local network - IP devices/hosts attempt to communicate directly
+  2. remote network - IP devices/hosts need to use default gateway
+* 
+
+#### L3 - Route Tables & Routes
 **Subsection**
 * xx
 * xx
