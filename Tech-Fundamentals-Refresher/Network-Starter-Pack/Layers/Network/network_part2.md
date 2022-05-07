@@ -18,11 +18,12 @@
 * IP addresses need to be unique (globally & especially on a local network) or bad things happen
 
 **Subnet Mask**
-* configured on L3 interfaces along with IP addresses (ie 1.2.3.4 255.255.255.255)
+* configured on L3 interfaces along with IP addresses (ie example above 133.33.3.7 255.255.0.0 <- /16 prefix for subnet mask)
 * default gateway: IP address on local network; packets forwarded to this IP address when intended destination not a local IP address
 * subnet masks allow IP devices/hosts to know if communication with another IP device is on same network or not
   1. local network - IP devices/hosts attempt to communicate directly
   2. remote network - IP devices/hosts need to use default gateway
+  *  subnet masks represent network part of an IP address
 * 
 
 #### L3 - Route Tables & Routes
