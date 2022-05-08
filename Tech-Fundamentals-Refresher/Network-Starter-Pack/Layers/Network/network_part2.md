@@ -22,12 +22,13 @@
 * default gateway: IP address on local network; packets forwarded to this IP address when intended destination not a local IP address
 * subnet masks allow IP devices/hosts to know if communication with another IP device is on same network or not
   1. local network - IP devices/hosts attempt to communicate directly
-  2. remote network - IP devices/hosts need to use default gateway
-  *  subnet masks represent network part of an IP address
-* 
+  2. remote network - IP devices/hosts need to use default gateway (IP routing, ie local device sends packets to internet router)
+  *  subnet masks represent network part of an IP address (ie part of how router makes decision for packet forwarding)
+* starting IP address (ie 133.33.0.0) - network part (subnet mask all 1s, ie 133.33), then host part (subnet mask all 0s), all 0s
+* ending IP address (ie 133.33.255.255) - network part (subnet mask all 1s, ie 133.33), then host part (subnet mask all 0s), all 1s
 
 #### L3 - Route Tables & Routes
-**Subsection**
+**Scenario: moving data from local network to AWS**
 * xx
 * xx
 * xx
