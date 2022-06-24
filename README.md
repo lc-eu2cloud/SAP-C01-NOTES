@@ -1,8 +1,5 @@
 # Course Scenario #
-
-## Animals4Life ORG ##
-
-### Animal Rescue & Awareness Organization ###
+## Animals4Life - Animal Rescue & Awareness Organization ##
 * Overview
   * region-dependent animal rescue, medical care, wild animal habitat preservation, & providing new homes for domestic animals
   * Monitoring (habitat devastation worldwide, animal migration)
