@@ -2,11 +2,11 @@
 ## Animals4Life - Animal Rescue & Awareness Organization ##
 * Overview
   * region-dependent animal rescue, medical care, wild animal habitat preservation, & providing new homes for domestic animals
-  * Monitoring (habitat devastation worldwide, animal migration)
-  * Technologies (IoT, Big Data)
-  * Global company (HQ:Brisbane, Australia)
+  * Monitoring (animal migration, habitat devastation worldwide)
+  * Technologies (Big Data, IoT)
+  * Global organization (HQ:Brisbane, Australia)
     * Other locations: London, New York, Seattle
-    * Staff: ~100 remote field workers (animal care, vets, research scientists) located in Australian region & other in-need locations; political lobbying staff (government policy)
+    * Staff: ~100 remote field workers (animal care, vets, research scientists) located in Australian region, other in-need locations & political lobbying staff (government policy)
     * Departments: call center, general admin, IT, legal, marketing, & accounts
   * Infrastructure
     * small on-prem DC in Brisbane; colos with 5 rented racks of space; old vendor-managed DC & vendor encouraging customers move out ASAP
