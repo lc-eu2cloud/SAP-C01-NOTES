@@ -9,9 +9,8 @@
     * Staff: ~100 remote field workers (animal care, vets, research scientists) located in Australian region, other in-need locations & political lobbying staff (government policy)
     * Departments: call center, general admin, IT, legal, marketing, & accounts
   * Infrastructure
-    * small on-prem DC in Brisbane; colos with 5 rented racks of space; old vendor-managed DC & vendor encouraging customers move out ASAP
-    * AWS pilot in Sydney region lacking resiliency & scalability business needed
-    * Azure/GCP isolated pilots lacking resilience & scalability business needed
+    * Brisbane: small on-prem DC (5 rented racks of space in colos; old vendor-managed DC where customers encouraged to move out ASAP
+    * AWS pilot in Sydney region, isolated Azure/GCP pilots, all lacking scalability & resiliency organization needed
     * All global offices & remote field workers consume resources from Brisbane office
   * cost-conscious but willing to try new things/adopt new technologies (business benefit required)
 
