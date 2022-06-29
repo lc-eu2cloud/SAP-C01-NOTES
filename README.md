@@ -9,18 +9,18 @@
     * Staff: ~100 remote field workers (animal care, vets, research scientists) located in Australian region, other in-need locations & political lobbying staff (government policy)
     * Departments: call center, general admin, IT, legal, marketing, & accounts
   * Infrastructure
-    * Brisbane: small on-prem DC (5 rented racks of space in colos; old vendor-managed DC where customers encouraged to move out ASAP
-    * AWS pilot in Sydney region, isolated Azure/GCP pilots, all lacking scalability & resiliency organization needed
-    * All global offices & remote field workers consume resources from Brisbane office
-  * cost-conscious but willing to try new things/adopt new technologies (business benefit required)
+    * Brisbane: small on-prem DC (5 rented racks of space in colos), DC: old, vendor-managed & customers encouraged to move out ASAP
+    * AWS pilot in Sydney region, isolated Azure/GCP pilots, all failed to meet scalability & resiliency organization needed
+    * Brisbane office: source of all resource consumption for global offices & remote field workers
+  * cost-conscious & willing to try new things/adopt new technologies => business benefit
 
  * Current Problems
-   * legacy on-premises is failing (DC will be decommissioned in 18 months)
-   * Cloud pilots have been suboptimal & not best practice (AWS/Azure/GCP)
+   * legacy on-premises is failing & DC will be decommissioned in 18 months 
+   * Cloud pilots: suboptimal & not best practice (AWS/Azure/GCP)
    * performance issues for remote field workers outside Brisbane area experiencing high latency
    * lack of HA & scalability hinders opportunity to grow at scale & adequately support non-Australian staff & locations
    * skills gap with existing staff: little automation/experience with cloud development
-   * Global expansion concerns - costs for new infrastructure (purchasing & deploying international infrastructure - very expensive)
+   * Global expansion concerns - costs for new infrastructure very expensive (purchasing & deploying international infrastructure)
  
  * Ideal Outcomes
    * fast performance for all field workers (not limited by systems business uses)
