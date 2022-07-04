@@ -24,9 +24,9 @@
  
  * Ideal Outcomes
    * fast performance for all field workers (not limited by systems organization uses)
-   * deploying necessary operations into new regions quickly whem required (provisioned/de-provisioned based on business needs;automation & usage-based billing)
+   * when required, deploy necessary operations into new regions quickly (provisioned/de-provisioned based on business needs;automation & usage-based billing)
    * low base infrastructure cost (allocate most of limited funds towards animal care) whilst able to scale & rapidly grow when required
-   * Utilizing agility to leverage real-world events such as social media campaigns at short notice to draw attention to disasters or other issues worldwide (rapid provisioning)
-   * creating solution architectures that support emerging technologies (IoT, Big Data, Machine Learning, analytics, etc.)
-   * using automation to allow business to focus on core staff that deliver on the organization's mission; minimized costs for IT, legal, finance, & minimized need for additional IT staff 
+   * Utilize agility to leverage real-world events such as social media campaigns at short notice to draw attention to disasters or other issues worldwide (rapid provisioning)
+   * create solution architectures that support emerging technologies (IoT, Big Data, Machine Learning, analytics, etc.)
+   * use automation to allow business to focus on core staff that deliver on the organization's mission; minimized costs for IT, legal, finance, & minimized need for additional IT staff 
   
