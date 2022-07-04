@@ -23,8 +23,8 @@
    * Global expansion concerns - costs for new infrastructure very expensive (purchasing & deploying international infrastructure)
  
  * Ideal Outcomes
-   * fast performance for all field workers (not limited by systems business uses)
-   * when required, deploying necessary operations into new regions quickly (provisioned/de-provisioned based on business needs;automation & usage-based billing)
+   * fast performance for all field workers (not limited by systems organization uses)
+   * deploying necessary operations into new regions quickly whem required (provisioned/de-provisioned based on business needs;automation & usage-based billing)
    * low base infrastructure cost (allocate most of limited funds towards animal care) whilst able to scale & rapidly grow when required
    * Utilizing agility to leverage real-world events such as social media campaigns at short notice to draw attention to disasters or other issues worldwide (rapid provisioning)
    * creating solution architectures that support emerging technologies (IoT, Big Data, Machine Learning, analytics, etc.)
