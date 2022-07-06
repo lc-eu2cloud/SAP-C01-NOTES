@@ -27,6 +27,6 @@
    * when required, deploy necessary operations into new regions quickly (provisioned/de-provisioned based on business needs;automation & usage-based billing)
    * low base infrastructure cost (allocate most of limited funds towards animal care) while able to scale & rapidly grow on demand
    * utilize agility to leverage real-world events (ie rapid provisioning: launch social media campaigns at short notice to draw attention to disasters or other issues worldwide)
-   * create solution architectures that support emerging technologies (IoT, Big Data, Machine Learning, analytics, etc.)
-   * use automation to allow business to focus on core staff that deliver on the organization's mission; minimized costs for IT, legal, finance, & minimized need for additional IT staff 
+   * create solution architectures that support emerging technologies (Big Data, IoT, Machine Learning, analytics, etc.)
+   * use automation to allow organization to focus on core staff & minimize costs for IT, legal, finance, & need for additional IT staff 
   
