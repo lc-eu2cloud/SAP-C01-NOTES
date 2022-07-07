@@ -15,7 +15,7 @@
   * cost-conscious & willing to try new things/adopt new technologies => business benefit
 
  * Current Problems
-   * legacy on-premises is failing & DC will be decommissioned in 18 months 
+   * failing legacy on-prem infrastructure & decommissioning DC in 18 months
    * Cloud pilots: suboptimal & not best practice (AWS/Azure/GCP)
    * performance issues for remote field workers outside Brisbane area experiencing high latency
    * lack of HA & scalability hinders opportunity to grow at scale & adequately support non-Australian staff & locations
