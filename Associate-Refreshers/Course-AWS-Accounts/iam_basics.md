@@ -10,7 +10,7 @@ Introduction
 * need a way to allow more control over what access is given to our AWS accounts (solved by the IAM service)
 
 IAM Service
-* Every AWS account comes with its own running copy (global database) of IAM
+* Every AWS account comes with its own running copy (global database <- review) of IAM
 * globally resilient: data always secure across all AWS regions
 * An AWS account trusts its own dedicated IAM instance (separate from IAM instances of other AWS accounts)
 * operationally same as account root user (trusted fully by AWS account, can do as much as account root user with some restrictions)
@@ -21,9 +21,9 @@ IAM Service
 
 Identity object types in IAM & IAM Policy Document
 * can create 3 different types of identity objects in IAM (IAM users, IAM groups, IAM roles)
-* IAM users: represent humans or applications that need access to an AWS account
+* IAM users: represents humans or applications that need access to an AWS account
 * IAM groups: collections of related IAM users (ie dev team)
-* IAM roles: identity that can be used by AWS services or for granting external access to an AWS account
+* IAM roles: identity that can be used by AWS services or for granting external access to an AWS account <- review
 * Choosing between IAM users & IAM roles (general guidelines)
   * IAM users: can identify the individual person or application that will login to a specific IAM user
   * IAM roles: granting access to services in an AWS account to an **_uncertain_** number of entities (principals)
@@ -37,8 +37,8 @@ IAM service's 3 main jobs
 ![IAM Service - 3 Main Jobs](https://i.postimg.cc/bvq9jX21/image13.png)
 
 IAM Service Summary
-* no cost associated for creating users, groups, or roles, only limits on how many for each
+* no cost associated for creating users, groups, or roles, only limits on how many for each <- review
 * gloabal service & globally resilient
 * only controls local identities in an account (no direct control on what external accounts or users can do)
-* can utilize identity federation & MFA
+* can utilize identity federation <- review & MFA
 * BEST PRACTICE: only utilize account root user to perform initial account setup (use IAM users afterwards) 
