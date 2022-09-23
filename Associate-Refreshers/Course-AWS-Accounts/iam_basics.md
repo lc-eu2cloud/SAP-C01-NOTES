@@ -17,7 +17,7 @@ IAM Service
   * restrictions around billing control & account closure
 * can create different types of identities that it manages
   * if any of these IAM identities allowed to perform an action, AWS account automatically trusts the identity in same way it trusts IAM 
-![IAM Service - AWS Account trusts IAM](https://i.postimg.cc/QdKC4gRb/image11.png)
+![IAM Service - AWS Account trusts IAM](https://user-images.githubusercontent.com/88348559/191972561-11967170-7a66-4e4d-8937-c32b7173de98.png)
 
 Identity object types in IAM & IAM Policy Document
 * can create 3 different types of identity objects in IAM (IAM users, IAM groups, IAM roles)
